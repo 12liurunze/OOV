@@ -200,7 +200,7 @@ def configuration(plan):
     cfg.update(
         disable_cuda_graph=True, disable_decode_cuda_graph=True, disable_prefill_cuda_graph=True,
         cuda_graph_backend_decode="disabled", cuda_graph_backend_prefill="disabled",
-        cuda_graph_bs_decode=[], cuda_graph_max_bs_decode=None,
+        # inherited graph batch sizes stay: SGLang's memory hook takes max() of them
         random_seed=plan["seed"],
     )
     return cfg
