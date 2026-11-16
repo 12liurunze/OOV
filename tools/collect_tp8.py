@@ -328,7 +328,7 @@ def child_environment(plan, output):
 
 
 def run_worker(plan_path, plan):
-    from benchmark import foreign_processes
+    from benchmark import foreign_processes, wait_until_released
 
     output = plan_path.parent
     if busy := foreign_processes(plan["devices"]):
@@ -344,6 +344,8 @@ def run_worker(plan_path, plan):
                 if busy := foreign_processes(plan["devices"], proc.pid):
                     raise RuntimeError(f"Another workload entered the selected GPUs: {busy}")
                 time.sleep(2)
+            if not proc.returncode:  # TP ranks may still be exiting; they are not a foreign workload
+                wait_until_released(plan["devices"], proc.pid)
             if proc.returncode or foreign_processes(plan["devices"]):
                 raise RuntimeError(f"Collection worker failed or lost isolation. Inspect {output / 'run.log'}")
         finally:
