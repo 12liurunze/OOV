@@ -1,0 +1,2210 @@
+{
+  "schema": "oov70-tp8-calibration-prompt-index-v1",
+  "data_role": "Prompts only. Collect fresh Llama-3.3-70B and matching SpecForge EAGLE3 TP8 Verify labels.",
+  "source_receipts": {
+    "hendrycks_math": [
+      {
+        "category": "algebra",
+        "card_url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math",
+        "revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+        "source_file": "algebra/train-00000-of-00001.parquet",
+        "split": "train",
+        "rows": 1744,
+        "sha256": "73347f5b55869f21ff094361025dbd12d291e971aa4d72142eacee10438e449f",
+        "license": "MIT",
+        "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/algebra/train-00000-of-00001.parquet",
+        "cache_path": "hendrycks_math/algebra/train-00000-of-00001.parquet",
+        "bytes": 505186
+      },
+      {
+        "category": "counting_and_probability",
+        "card_url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math",
+        "revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+        "source_file": "counting_and_probability/train-00000-of-00001.parquet",
+        "split": "train",
+        "rows": 771,
+        "sha256": "d37ae017930df41678edee50dcde18c17fb06afaff9eb505c1b95f1002bfcb31",
+        "license": "MIT",
+        "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/counting_and_probability/train-00000-of-00001.parquet",
+        "cache_path": "hendrycks_math/counting_and_probability/train-00000-of-00001.parquet",
+        "bytes": 329354
+      },
+      {
+        "category": "geometry",
+        "card_url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math",
+        "revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+        "source_file": "geometry/train-00000-of-00001.parquet",
+        "split": "train",
+        "rows": 870,
+        "sha256": "9dbf5e5b55499e696e0ba72da9d85d4f0be3acbf7eaa6cb014b0fc78bb63784f",
+        "license": "MIT",
+        "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/geometry/train-00000-of-00001.parquet",
+        "cache_path": "hendrycks_math/geometry/train-00000-of-00001.parquet",
+        "bytes": 549388
+      },
+      {
+        "category": "intermediate_algebra",
+        "card_url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math",
+        "revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+        "source_file": "intermediate_algebra/train-00000-of-00001.parquet",
+        "split": "train",
+        "rows": 1295,
+        "sha256": "0c87f3798ebdfb915b1f9b6fc13c1a8d064c3cb91631ccbe85b83ed5d71150f6",
+        "license": "MIT",
+        "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/intermediate_algebra/train-00000-of-00001.parquet",
+        "cache_path": "hendrycks_math/intermediate_algebra/train-00000-of-00001.parquet",
+        "bytes": 575154
+      },
+      {
+        "category": "number_theory",
+        "card_url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math",
+        "revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+        "source_file": "number_theory/train-00000-of-00001.parquet",
+        "split": "train",
+        "rows": 869,
+        "sha256": "81c08649149b39811f2d1d7ddf5dfccf6c4c8044a2e169cfb24db09160c941f4",
+        "license": "MIT",
+        "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/number_theory/train-00000-of-00001.parquet",
+        "cache_path": "hendrycks_math/number_theory/train-00000-of-00001.parquet",
+        "bytes": 308653
+      },
+      {
+        "category": "prealgebra",
+        "card_url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math",
+        "revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+        "source_file": "prealgebra/train-00000-of-00001.parquet",
+        "split": "train",
+        "rows": 1205,
+        "sha256": "765b526fb5c0b8385cb7be2c16bf4f6f28cf71f2bc15c826abfbb5fa7f8616cc",
+        "license": "MIT",
+        "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/prealgebra/train-00000-of-00001.parquet",
+        "cache_path": "hendrycks_math/prealgebra/train-00000-of-00001.parquet",
+        "bytes": 383626
+      },
+      {
+        "category": "precalculus",
+        "card_url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math",
+        "revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+        "source_file": "precalculus/train-00000-of-00001.parquet",
+        "split": "train",
+        "rows": 746,
+        "sha256": "28bb1ff95525c8d32521509bef91de76339659f5467a381e6e8deea204538f0e",
+        "license": "MIT",
+        "url": "https://huggingface.co/datasets/EleutherAI/hendrycks_math/resolve/21a5633873b6a120296cce3e2df9d5550074f4a3/precalculus/train-00000-of-00001.parquet",
+        "cache_path": "hendrycks_math/precalculus/train-00000-of-00001.parquet",
+        "bytes": 353745
+      }
+    ],
+    "bigcodebench": [
+      {
+        "category": "code",
+        "card_url": "https://huggingface.co/datasets/bigcode/bigcodebench",
+        "revision": "b74c0d0bf70d2c0bc459be537895cca163007f1a",
+        "source_file": "data/v0.1.4-00000-of-00001.parquet",
+        "split": "v0.1.4",
+        "rows": 1140,
+        "sha256": "d9a4965821c9507ebdfb551c288656b2d5fe553234f5183044333ca8a4018267",
+        "license": "Apache-2.0",
+        "url": "https://huggingface.co/datasets/bigcode/bigcodebench/resolve/b74c0d0bf70d2c0bc459be537895cca163007f1a/data/v0.1.4-00000-of-00001.parquet",
+        "cache_path": "bigcodebench/data/v0.1.4-00000-of-00001.parquet",
+        "bytes": 2362110
+      }
+    ],
+    "dolly": [
+      {
+        "card_url": "https://huggingface.co/datasets/databricks/databricks-dolly-15k",
+        "revision": "d72c16e4644a463b9c678c71d9440befd4594556",
+        "source_file": "databricks-dolly-15k.jsonl",
+        "split": "train",
+        "rows": 15011,
+        "sha256": "2df9083338b4abd6bceb5635764dab5d833b393b55759dffb0959b6fcbf794ec",
+        "url": "https://huggingface.co/datasets/databricks/databricks-dolly-15k/resolve/d72c16e4644a463b9c678c71d9440befd4594556/databricks-dolly-15k.jsonl",
+        "cache_path": "dolly/databricks-dolly-15k.jsonl",
+        "bytes": 13085339
+      }
+    ],
+    "xsum": [
+      {
+        "card_url": "https://huggingface.co/datasets/EdinburghNLP/xsum",
+        "revision": "7d4d486c2f8ef850b1a11aead99b894ff3dd7da9",
+        "source_file": "data/test-00000-of-00001.parquet",
+        "split": "test",
+        "rows": 11334,
+        "sha256": "224e9dbc6fed987759c1954603b43cb280b8d475d78893779130aa707d967ed7",
+        "url": "https://huggingface.co/datasets/EdinburghNLP/xsum/resolve/7d4d486c2f8ef850b1a11aead99b894ff3dd7da9/data/test-00000-of-00001.parquet",
+        "cache_path": "xsum/data/test-00000-of-00001.parquet",
+        "bytes": 16731226
+      }
+    ]
+  },
+  "redhat_exclusion": {
+    "dataset": "RedHatAI/speculator_benchmarks",
+    "revision": "2ae86affa2cb97a972b7fc681dd51c04fbff083e",
+    "raw_subsets": {
+      "HumanEval": {
+        "rows": 164,
+        "sha256": "1d49078ba3e2b196b9344535bef34a43021f038fad9561d6ee7c53450609a6a2"
+      },
+      "math_reasoning": {
+        "rows": 80,
+        "sha256": "b73b686f1c585eef7db1306564688da8668ef633ff8e58d55949aac04db8c9b0"
+      },
+      "qa": {
+        "rows": 80,
+        "sha256": "17c7c2fb9f36abd16e3e2a8ab5487ae678e9762d96cb9736eec442cbaba9f506"
+      },
+      "question": {
+        "rows": 80,
+        "sha256": "9db8ea4678e058c26f21a9cc0bf79f95a9750e370cafb4f90a8e3b058c2a2aa4"
+      },
+      "rag": {
+        "rows": 80,
+        "sha256": "d1644a209c444e1dd7ff65bf3ce9e8a4daa5d609ac93cbf4f6bebc10400d8d91"
+      },
+      "summarization": {
+        "rows": 80,
+        "sha256": "e7d2945062f77aae25553f7f7531deefc358f5d0b87b9c623e6ba8ba555ff1be"
+      },
+      "translation": {
+        "rows": 80,
+        "sha256": "bd27352726c318b72a263158672b0ff0c15feb459ae735f723b27623a0ba595d"
+      },
+      "writing": {
+        "rows": 80,
+        "sha256": "9db8ea4678e058c26f21a9cc0bf79f95a9750e370cafb4f90a8e3b058c2a2aa4"
+      }
+    },
+    "unique_normalized_prompts": 643
+  },
+  "dedup_audit": {
+    "method": "NFKC and casefold exact words, >=82% 4-token shingle containment with >=6 shared; Python token check against HumanEval",
+    "fields": [
+      "full prompt",
+      "original source components",
+      "Python code when present"
+    ],
+    "selected_prompt_count": 280,
+    "cross_file_id_overlap": 0,
+    "selected_internal_overlap": 0,
+    "redhat_overlap": 0
+  },
+  "selection": {
+    "seed": "oov70-tp8-calibration-20261116-v1",
+    "split_seed": "context-repair-20261114-v1",
+    "pilot_rule": "Use the 24 frozen pilot questions and interleave the four sources.",
+    "main_rule": "Exclude pilot IDs and over-budget prompts. In each source and split group, take the first K rows by SHA256(seed + '|' + canonical_question_id). Re-sort per source and interleave the four sources in alphabetical order.",
+    "main_per_source_split": {
+      "train": 40,
+      "validation": 12,
+      "test": 12
+    }
+  },
+  "files": {
+    "calibration_pilot24.jsonl": {
+      "rows": 24,
+      "sha256": "683e5a647b7685e11c3b114982285b0ce954675cd558d1ae9e2d1d5f67ce3f35",
+      "per_source": {
+        "bigcodebench": 6,
+        "dolly": 6,
+        "hendrycks_math": 6,
+        "xsum": 6
+      },
+      "per_split": {
+        "test": 8,
+        "train": 8,
+        "validation": 8
+      },
+      "max_new_tokens": 96,
+      "proxy_prompt_tokens": {
+        "min": 18,
+        "median": 285.5,
+        "max": 761
+      },
+      "row_provenance": [
+        {
+          "canonical_question_id": "external:5683486289cb7044bdb1104c72697709fae05e70b07c62fcb23a0bb49095c804",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/787",
+          "split": "test",
+          "question_content_sha256": "42135db078664571137ba391db3e7591fdbc5bdd2db20e1c4072f123ca7309e8"
+        },
+        {
+          "canonical_question_id": "external:bf87ffbc19fbbbec5004ce49e3b0edcf6781f75b297ac315dda99bce47b9eb15",
+          "source": "dolly",
+          "source_row_id": "12120",
+          "split": "test",
+          "question_content_sha256": "9b005853d79e1ebdeec8f8fe3c701145b58b24790589baf0bd82444a834d73ba"
+        },
+        {
+          "canonical_question_id": "external:6f878dca78f06e3163cae47cf03600b42e3b5ff523299b2f045ddeab98ffc2b0",
+          "source": "hendrycks_math",
+          "source_row_id": "intermediate_algebra/865",
+          "split": "train",
+          "question_content_sha256": "249342ed31e7f8d2683e8a5b8c400408f5746c99cf8c8f9a2679291147ccf6a2"
+        },
+        {
+          "canonical_question_id": "external:fe68551f0496b6a6293e692942e95c7969d9a3ea47b478e0270ebf2a65df53a0",
+          "source": "xsum",
+          "source_row_id": "30195774",
+          "split": "validation",
+          "question_content_sha256": "dc19a4f0258a94c1aed33c9ca9c4f00d79e6d7ece77816e8c220317b012807ae"
+        },
+        {
+          "canonical_question_id": "external:8b7a5da67cc9d27de66ffe20b54791b59700f0e6f7983a78ad297a6e24d06307",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/362",
+          "split": "train",
+          "question_content_sha256": "e88b46632243d1973be8fff26081326ba6b73294497299bce5ec3cbe6c68418f"
+        },
+        {
+          "canonical_question_id": "external:60432b3b349d14f839b9c77f789d798bd5a4c46f6e0c277b36cb25555d1d9708",
+          "source": "dolly",
+          "source_row_id": "7723",
+          "split": "test",
+          "question_content_sha256": "7453e1ec706927c62717823dea23b30be796ffe9b789be4df19f53b926def6e0"
+        },
+        {
+          "canonical_question_id": "external:8e5d275833bb430091b4bd30ec92d5fec5831afacf3b9a6c07126a84f18f7dc8",
+          "source": "hendrycks_math",
+          "source_row_id": "prealgebra/760",
+          "split": "validation",
+          "question_content_sha256": "19d987c1e4b1cc27683491dc576545950375a70cc73c79891f1906a5d363b42d"
+        },
+        {
+          "canonical_question_id": "external:4846230d85350fce5c77493d3e088c3233f48fe446f69e3d8905b0701cf3cfae",
+          "source": "xsum",
+          "source_row_id": "18868049",
+          "split": "test",
+          "question_content_sha256": "716a9196c8c0288309b23443df3a852d0cbab59335d709d9751fb1cdde59cacb"
+        },
+        {
+          "canonical_question_id": "external:8416144122919f0cdbc11c7b31d2de15cfcfeadbe9a691f07583eea017ded330",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/70",
+          "split": "train",
+          "question_content_sha256": "a7498308dccf43acab7ef93811f9d8101582b6b3930d127d04d68d1e37bda6d9"
+        },
+        {
+          "canonical_question_id": "external:f992eeafc488d1f1a03e022797d77726474a8b0750803c7301670896c131741e",
+          "source": "dolly",
+          "source_row_id": "10044",
+          "split": "train",
+          "question_content_sha256": "7ccbaac9acae5eaf3943d27e4e7cedfe30d466f0a14edc3a2c267e888e0f037d"
+        },
+        {
+          "canonical_question_id": "external:489682871e4466832010952f5f43478cde1176585f2472e305f7cef660ce3c27",
+          "source": "hendrycks_math",
+          "source_row_id": "prealgebra/939",
+          "split": "validation",
+          "question_content_sha256": "71cbebb71740ec2439982a4c638ecf075481b6df26b624527dfb303a43d52161"
+        },
+        {
+          "canonical_question_id": "external:dbcb9d63d754f32151e089c714cad1f53d99f51fc3067d68e86072ef8632a786",
+          "source": "xsum",
+          "source_row_id": "34088691",
+          "split": "test",
+          "question_content_sha256": "00cddf17aaf91e9f08569f9fbb84a82a87c9bef0254d9256e0508063dfade98d"
+        },
+        {
+          "canonical_question_id": "external:7ed227bf79343b7e514bc0c212b29d60ba6c66303ea35d8ab8f886de8af0d34a",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/159",
+          "split": "test",
+          "question_content_sha256": "40269b4c63480bdde1eb9fa5a5e3dad8c4b99be713116176dfe6b182722eb023"
+        },
+        {
+          "canonical_question_id": "external:a651fe0fa4903f4a5746b8408e023cdd553fe25082242d84922af0815dff2c0a",
+          "source": "dolly",
+          "source_row_id": "3636",
+          "split": "train",
+          "question_content_sha256": "d805616bfd6cc52bc7875c0acdf34e3c891071212bb986a721082a2dc67107c0"
+        },
+        {
+          "canonical_question_id": "external:a3d996fbf83f56029c98d45eeea9a3ea75ecb3b93249724644490435bee159de",
+          "source": "hendrycks_math",
+          "source_row_id": "prealgebra/337",
+          "split": "test",
+          "question_content_sha256": "48fba713c2441daab78b40f0e1706786a1779a0bf529a08efa3f4c897def44c9"
+        },
+        {
+          "canonical_question_id": "external:e122e0f54dd2d76c565e79a43d79b8a4b54b295ac727d0963636495620686834",
+          "source": "xsum",
+          "source_row_id": "33896209",
+          "split": "validation",
+          "question_content_sha256": "02ff5c2f516b2b7891e424182996e8793c5389619e708c8ed074d7b8aff75dfc"
+        },
+        {
+          "canonical_question_id": "external:bfe249251df156e32d98aa553e89a08ce5b9a13858b0b39932e686ec75f666ba",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/977",
+          "split": "validation",
+          "question_content_sha256": "eb5ad17995b1b515e3842d14ea219bd5fb1a767c76d426f2b1ee2cf050968e41"
+        },
+        {
+          "canonical_question_id": "external:d27cf759beaf6dfeb5ee9035e70c57f62cb23a30b676514631b5e24f6261d753",
+          "source": "dolly",
+          "source_row_id": "12920",
+          "split": "validation",
+          "question_content_sha256": "7ec86e6addce47abfc4f7fdcb12b77e7722d4a5f7dce7a1b6e05fd969d7a3609"
+        },
+        {
+          "canonical_question_id": "external:7611a4f22291ce7aa53fa0e0975de7ee59366377640061918f6fe173202c7b68",
+          "source": "hendrycks_math",
+          "source_row_id": "algebra/11",
+          "split": "test",
+          "question_content_sha256": "db72532d3a1187f38ac1b84a5c921c816b23cf8ed958f9bf6b287879cf52b7d5"
+        },
+        {
+          "canonical_question_id": "external:3ee2bd805fe371a9279d9b7ee2fafad9a5db9c7896e4ac3cd662371d4f7f7610",
+          "source": "xsum",
+          "source_row_id": "38026625",
+          "split": "train",
+          "question_content_sha256": "27eada7987de14b25a9ab6cb18e1b8ecde159a775b20b365503bb1574a11c087"
+        },
+        {
+          "canonical_question_id": "external:afbf0b75496433432ab84046d211284910236cb86f6df064e3f72b1d8136322c",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/425",
+          "split": "validation",
+          "question_content_sha256": "c3ef4b36bb77ee6c478a92b856a29c8f32000bcecefe56fccc31d1505ce1a488"
+        },
+        {
+          "canonical_question_id": "external:a39a237b3a92d77c9529616bd1b6b293ce7be6ef774e72526e989be576be1edc",
+          "source": "dolly",
+          "source_row_id": "7158",
+          "split": "validation",
+          "question_content_sha256": "488201148497fa575004dbd12a8cf25638fcfdeeb3674662f2fe45b0ab6ce511"
+        },
+        {
+          "canonical_question_id": "external:6cfa07b0ace4e861ce565059018c37f5561c3f496a1b7fe7f4b7a205de1c6bb2",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/574",
+          "split": "train",
+          "question_content_sha256": "466c4066a11ae976157cd81d1965acf3b29da8f46ced1af9333f155e3bb550db"
+        },
+        {
+          "canonical_question_id": "external:411f653609fbf50b60cac41cfd282a5601c595599b16ca21ccbb25d0178547c2",
+          "source": "xsum",
+          "source_row_id": "35460006",
+          "split": "train",
+          "question_content_sha256": "1ef786bf461b6739fa41c0547e607cb79de524f31cfa9b70eefac70024f175ff"
+        }
+      ]
+    },
+    "calibration_main256.jsonl": {
+      "rows": 256,
+      "sha256": "0b72a1f46e7bd9e5c11517874cf072df9b728601d45a690b371127e7f115157f",
+      "per_source": {
+        "bigcodebench": 64,
+        "dolly": 64,
+        "hendrycks_math": 64,
+        "xsum": 64
+      },
+      "per_split": {
+        "train": 160,
+        "validation": 48,
+        "test": 48
+      },
+      "max_new_tokens": 256,
+      "proxy_prompt_tokens": {
+        "min": 15,
+        "median": 197.0,
+        "max": 816
+      },
+      "row_provenance": [
+        {
+          "canonical_question_id": "external:2036c671be2dd813851195e0d8dbe26f66c427616affe52883910b93e73369b9",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/913",
+          "split": "train",
+          "question_content_sha256": "e34239e7874adcead3c30e488dabe11b1d2ec1834de1ca419d6780b12dec127b"
+        },
+        {
+          "canonical_question_id": "external:9c1e7a5e6f682b9e99a373e16fc801b0796908cad9ab7f3b1c8b6c6ee49403bc",
+          "source": "dolly",
+          "source_row_id": "4073",
+          "split": "validation",
+          "question_content_sha256": "69bf7b6fcfca0bace4fac922f3cf251ef8fd0673beac9a3d4a4da30f13d65210"
+        },
+        {
+          "canonical_question_id": "external:510e6cccd27116266f87b8293ac8f4d5f9022b1159b8c6bfe35037b8aa8b9395",
+          "source": "hendrycks_math",
+          "source_row_id": "algebra/1191",
+          "split": "validation",
+          "question_content_sha256": "206e73d36d2e931e4f1fba871545e71fc14fabd43a48929ba1250903222c2151"
+        },
+        {
+          "canonical_question_id": "external:53a6237c0e246c8e1a11025631c861caa9ca431363187e16ca39fbe37ff95c79",
+          "source": "xsum",
+          "source_row_id": "35585157",
+          "split": "test",
+          "question_content_sha256": "8af9316787542930858dba498ec550c2fa0a4e28d6fc92a878a4623136320fde"
+        },
+        {
+          "canonical_question_id": "external:bb932dd39d54b64f96a060919f791acbfdae79d75f2a0681b339a72624c9256a",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/121",
+          "split": "train",
+          "question_content_sha256": "9efa88c656634d329320bbc0a365ff7794a7033934b4dd1917b448f19fa05250"
+        },
+        {
+          "canonical_question_id": "external:8c159e3688cff2799a5548c53ae0077fa56b0ae4ae1c3f6ec414fa21a713a93f",
+          "source": "dolly",
+          "source_row_id": "5634",
+          "split": "train",
+          "question_content_sha256": "b2642c55ffcdef1026521ac41c7236b89aa1076b3823e95d3e62a3aee9bc6038"
+        },
+        {
+          "canonical_question_id": "external:b1e656c61fd9f318852d300c63101a66bc0835309a5faebc6bbda45c3ddb070c",
+          "source": "hendrycks_math",
+          "source_row_id": "counting_and_probability/521",
+          "split": "train",
+          "question_content_sha256": "48a8bcc0cad50c1a720e5da5cd739a7f4e1c05cc20cdcc24ba42bf3dd95df2ad"
+        },
+        {
+          "canonical_question_id": "external:4e08a5313c3fc21ea4bc26cecf0a68166c42e7aec5a288817c87e3ab3e4c9f20",
+          "source": "xsum",
+          "source_row_id": "33126386",
+          "split": "train",
+          "question_content_sha256": "551d942a1b6f9852abcc86d49840ee3f274bca4e5fb49e22577b640dc2bfef87"
+        },
+        {
+          "canonical_question_id": "external:b6d16e3a31d449e3996d1c17d789544243ef6cc90ed869f03b7f482d1e9b2df9",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/683",
+          "split": "train",
+          "question_content_sha256": "785443fc1479e88ab29054c10b0fdf847e6b1035a4a5935e61814b73caa15b81"
+        },
+        {
+          "canonical_question_id": "external:c719413425cca11b35fa0e2dde2fa593363dea67ea02cbbbfc34ebb12473ca7e",
+          "source": "dolly",
+          "source_row_id": "2303",
+          "split": "train",
+          "question_content_sha256": "ea2a487726f27ff998186d9e32785dfa6aaf46bfcf04977ca9f7ca4a4c29dc70"
+        },
+        {
+          "canonical_question_id": "external:caf51ca0e6fe45b278d7ecf3b00339991034b474a53f1dd7226ac3686ef8a999",
+          "source": "hendrycks_math",
+          "source_row_id": "number_theory/600",
+          "split": "validation",
+          "question_content_sha256": "6960d2c1a7fcfddfadb9442ce434ad8dfcd77985c6c001b76bb069fd80eda4ae"
+        },
+        {
+          "canonical_question_id": "external:f52a0b7223c4f7dbd3e34bfdb35000b00423a1e368c3bb77e4152ac76e399ace",
+          "source": "xsum",
+          "source_row_id": "27925875",
+          "split": "train",
+          "question_content_sha256": "97a7c30432cd190dd760df15b6f9e73241c6650e71a79332205d4ebb355eede9"
+        },
+        {
+          "canonical_question_id": "external:9133c8b3a9f92d221d8cb1a9ce8e77136479346dd5ca16bce080990b898430e8",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/1067",
+          "split": "validation",
+          "question_content_sha256": "ce8fbbd91730367f84e0e5a6e3b484e741c839f8b68be2179e13ae1e97ba5217"
+        },
+        {
+          "canonical_question_id": "external:d383dd441c51ebe4adedc724e328bd09019e0bbd3e36e47ec0ef96466ef2a763",
+          "source": "dolly",
+          "source_row_id": "2195",
+          "split": "train",
+          "question_content_sha256": "5adfb9e935a382f5df00007759b26118eba5e7a440feb046c9bddcad64357acb"
+        },
+        {
+          "canonical_question_id": "external:dbd778e366fd73f4d5f460ad31d8028b2ab738854c953d9021277a2b3ac0dd05",
+          "source": "hendrycks_math",
+          "source_row_id": "number_theory/304",
+          "split": "train",
+          "question_content_sha256": "db85493227b6abd1d749f0bb56cc3d0f21c141c4d928b347ad21d91c2552bd77"
+        },
+        {
+          "canonical_question_id": "external:962ac45b4a61450262faadfd6d1d1ae4a9233856ccfe8e117f3759eef87745fe",
+          "source": "xsum",
+          "source_row_id": "27851029",
+          "split": "train",
+          "question_content_sha256": "1540cf51d64c60431e2c86feef98d417bba4aec2c7c5079da134ad1bdeb5032b"
+        },
+        {
+          "canonical_question_id": "external:b7e96eda88831896bef450f6e32fca54ea8f4b08332ce9e134c741e9b4a7d70e",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/517",
+          "split": "train",
+          "question_content_sha256": "3f20e8347a4662f3111aa24ab50de4aad213f964cbadaa09f66d7f02148ff5a0"
+        },
+        {
+          "canonical_question_id": "external:5c002258da5528b61abf0f86b5f74924af3db32612f22c83152c6c3bb48c832a",
+          "source": "dolly",
+          "source_row_id": "3830",
+          "split": "train",
+          "question_content_sha256": "8b97f113fd963b232b273553c52235f41f3e26077b748e4cade4b7c87a57aa31"
+        },
+        {
+          "canonical_question_id": "external:35f38b9796f9495bcc8860f9c3672e8525628fc4faf9da4d6b8d8e838ec1e1d7",
+          "source": "hendrycks_math",
+          "source_row_id": "number_theory/554",
+          "split": "validation",
+          "question_content_sha256": "3edbbdbfe5608561fee868af8537d002e1c5f1852a954285ea3d8c4f743fca10"
+        },
+        {
+          "canonical_question_id": "external:27552e3ff3d982e4d5ce0301a94bbe00947ad259b7c5c6f6b1328d4718f346be",
+          "source": "xsum",
+          "source_row_id": "40888639",
+          "split": "train",
+          "question_content_sha256": "9ceeb9233a901b10d1c57707efca2bff86ed9d341bf1849c3e027fa6e13648f6"
+        },
+        {
+          "canonical_question_id": "external:f6cdad990b07a1443acd89b7d91ff00ac6ef097020339e41d612ea0f3de46a5d",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/958",
+          "split": "train",
+          "question_content_sha256": "47e0cc37670e86877dddb5d5aac298f4308f828f722c3da3c20b9bd78b9bb885"
+        },
+        {
+          "canonical_question_id": "external:584de8ba6bd0a8ff8cd3b15387d1a962fbcae21940e81db55486cdcc5d46099f",
+          "source": "dolly",
+          "source_row_id": "3151",
+          "split": "validation",
+          "question_content_sha256": "55d2c21ca39ab61030c253f534584fcfa5ec4648f85ddb0c234a9eb969ed4411"
+        },
+        {
+          "canonical_question_id": "external:a8610c62bf3448acdf072cff6dfdd5faf26c6959f6dad64bd88600ed60c6e3c4",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/273",
+          "split": "train",
+          "question_content_sha256": "396138cb7ac71c57b116f08173ddb10aba6ecfd725be6bb467623ac356a2ce8f"
+        },
+        {
+          "canonical_question_id": "external:4812cc409dc6c76bfa180178e2322ace7d6901a1b562eb755926d43327bbc3fb",
+          "source": "xsum",
+          "source_row_id": "37782718",
+          "split": "train",
+          "question_content_sha256": "330fed5a036a4d690d203db08054dfc7e56e48841fe1ebb1a723cef95ff8e0e2"
+        },
+        {
+          "canonical_question_id": "external:3d8873cc1219eb65b32263badeacfd42b3f130402aeb9e7e889a5c00f27e168b",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/176",
+          "split": "train",
+          "question_content_sha256": "cbcfe7cae889980c4952d423f36b214dc1b605742289b0ae5f825934d3d3486d"
+        },
+        {
+          "canonical_question_id": "external:bd8273d120c82677904427ec4630aaf4178fcd6ab55b9eed54b552d0517c5fe5",
+          "source": "dolly",
+          "source_row_id": "11981",
+          "split": "validation",
+          "question_content_sha256": "7c9d2781dcbe657f23300f4abeb66b55a577c599180fa4b988f3ec6cfe982c02"
+        },
+        {
+          "canonical_question_id": "external:d31f4b3d9f96cf5d60780e8a8bf324f58355eca670242d72941dadeae3f581a3",
+          "source": "hendrycks_math",
+          "source_row_id": "precalculus/593",
+          "split": "train",
+          "question_content_sha256": "44e9c4a0b8b2d5140894b183796184b875257a061f2de415316d92d10902127f"
+        },
+        {
+          "canonical_question_id": "external:6ef280885f41b089932a3f8e03ea7da5382bd5cd18e8fce698c201d469bc2dec",
+          "source": "xsum",
+          "source_row_id": "40584000",
+          "split": "test",
+          "question_content_sha256": "beac83318f5c6006c41ce23c8117f4f3656af40421ccd88e074137713e1f5945"
+        },
+        {
+          "canonical_question_id": "external:c1fa4c5ca372b04eadb8ef5a3d24482f7bb999c9a3812abebe6efc2536ced603",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/467",
+          "split": "validation",
+          "question_content_sha256": "9fe261d5503f1798f933c97b65150914e65f26a10d4deaba9d154947d4678ad9"
+        },
+        {
+          "canonical_question_id": "external:b1803de93ce0df8e1f4096eadc592bbaf279503ccddbc61d769adf0109821c9b",
+          "source": "dolly",
+          "source_row_id": "10488",
+          "split": "validation",
+          "question_content_sha256": "0cc60c8ce2d2e7eafc6948852bb0c6ca1b1939fb0e57cbd150d152963c201ff7"
+        },
+        {
+          "canonical_question_id": "external:bc8dcd430ac23654fd9c0b5b29e29eb4953f6f2dad8f535d9de75719249d4287",
+          "source": "hendrycks_math",
+          "source_row_id": "algebra/1393",
+          "split": "validation",
+          "question_content_sha256": "0beab44c8f651a89fd2a5d4df9699cda110505b9aa35d949936c3909bba2630c"
+        },
+        {
+          "canonical_question_id": "external:03d84b3323bc41c7f5b02feb8e297d8d19752238e21bfd35661ae6facdaeeb5c",
+          "source": "xsum",
+          "source_row_id": "39466386",
+          "split": "train",
+          "question_content_sha256": "5a5348a54dbecac2a142e4993e0f0259fc30766d76be7b883f44080865e63f6d"
+        },
+        {
+          "canonical_question_id": "external:02b35d213bb5fa04bcdfb44a08a4a1f2deeb26cc1ba92bd2acf0886a457a9486",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/98",
+          "split": "train",
+          "question_content_sha256": "6820ee22c8b4a4c26b0885d22daefefa6d47371a78126e9dc2a4aa4b562086b0"
+        },
+        {
+          "canonical_question_id": "external:6eb0b7ec1cb77163195dd6d2210e1bc19157a23caa37725815085e71ee79585f",
+          "source": "dolly",
+          "source_row_id": "10953",
+          "split": "test",
+          "question_content_sha256": "a25938511237ae7345daab5cb7f9a7dd015fc0d09a60f430ce6fe8ee4cd8436e"
+        },
+        {
+          "canonical_question_id": "external:ee799258e8b691b00a240b33c30dcea9aaefa300e5f9939382cbb28228934120",
+          "source": "hendrycks_math",
+          "source_row_id": "prealgebra/270",
+          "split": "train",
+          "question_content_sha256": "80c0e4aabf88b5c5446addcf06e5fc5b94b248c07eeb58be2f67d40da15d9ca2"
+        },
+        {
+          "canonical_question_id": "external:6ec55faccfc39a6d85b3292d58a0b08d377fb5a50f405608cfd4dc1d0f52be95",
+          "source": "xsum",
+          "source_row_id": "27156065",
+          "split": "train",
+          "question_content_sha256": "c8300b7db298b26580048836c9ee7a0ecc7e3fdbb21ca80b18b8afc9a8181d07"
+        },
+        {
+          "canonical_question_id": "external:51f9d9f9f6ecf49b6e495caef7a5d698a021e7ccc835df4d31b59e79b196f411",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/410",
+          "split": "train",
+          "question_content_sha256": "36c5654619059cdda1403c78582813fc927c91cc49cdbedb73e4ae289adaefe5"
+        },
+        {
+          "canonical_question_id": "external:255729572b0f100a8c72cd38e2cfe9efc9f2192355375643cff6704020df15c3",
+          "source": "dolly",
+          "source_row_id": "9338",
+          "split": "train",
+          "question_content_sha256": "b597cd6261d23237254d614b88e9f695b4b5c09087e2ae0f7d4ae9f213dddbd9"
+        },
+        {
+          "canonical_question_id": "external:1f7cd6de1012c69f72819ec93d9a889e31f9b723faaf6a939cedf1e84dbdb0df",
+          "source": "hendrycks_math",
+          "source_row_id": "precalculus/467",
+          "split": "train",
+          "question_content_sha256": "1f42b95c2e85d09d697fa5263c2cb038499168c91a1d031e1783faefb7ff1334"
+        },
+        {
+          "canonical_question_id": "external:c9bc4dc3e4d331883063e6feb38eeac390122b78215319ceed58de127cd901d4",
+          "source": "xsum",
+          "source_row_id": "35755687",
+          "split": "train",
+          "question_content_sha256": "258e43f94dceee283beeba7abc88566aca79c9587a46a1133c39069b10a95ecb"
+        },
+        {
+          "canonical_question_id": "external:70b44e9899d0a7ed5f4372d8255f292cf17e6d392fbbe2cd0d011390834c2ba3",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/13",
+          "split": "train",
+          "question_content_sha256": "7c004f9a5a41ba6d4efaf8b07a8dbfe1ac726059fe57518fe151f9ec2af85499"
+        },
+        {
+          "canonical_question_id": "external:f292418b00a9fb1a766be1707ea7fb57375d2ac22457c1aced6181b6ee5781c6",
+          "source": "dolly",
+          "source_row_id": "6902",
+          "split": "train",
+          "question_content_sha256": "d98e99e5039295107762cd3942a78548929eb5aa64801848f63513837aa131d4"
+        },
+        {
+          "canonical_question_id": "external:95c039153720a7ed1ea9b6fe94741d59e7074d783f58798b43e7a0d635cdfac6",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/733",
+          "split": "train",
+          "question_content_sha256": "0a6c83b1aa6540861e2a4b7c4c4c9d5e3f91c599161eeccd6fd5ec401213ae90"
+        },
+        {
+          "canonical_question_id": "external:b5653c6fd023165971aa4fffb19041c11fdbceeef8541f8d410be1e5c8447f0d",
+          "source": "xsum",
+          "source_row_id": "35105380",
+          "split": "train",
+          "question_content_sha256": "f3e5cee93eeab6cc288387e9266ac47ba6d21648b4104c8f975c6107438f3fab"
+        },
+        {
+          "canonical_question_id": "external:d0960fcf6e48f073bb8a4223067b56a9beac115ec4e2c4e47b53fec5a58ed56c",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/204",
+          "split": "validation",
+          "question_content_sha256": "864d0bd99cd9de9f17660c696bfe8ad8c19faa2dd5c4467b7a4d1905c52ee7e9"
+        },
+        {
+          "canonical_question_id": "external:96bcc65931966353c596c04a1e60df9d44c57caa9e7f4876cbc3703464e2e1e8",
+          "source": "dolly",
+          "source_row_id": "10824",
+          "split": "train",
+          "question_content_sha256": "585d8b60d1f04af48c5ea072d0a23f78392577d01ea4e10f3e7a889abbade393"
+        },
+        {
+          "canonical_question_id": "external:d384b27365987ba607bb5dc3a8bca6495b263175f238736de5d6075893161381",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/248",
+          "split": "validation",
+          "question_content_sha256": "6ac75934761d828c2020cb17106b7196d2ee6581a48694c3499ab093f6c16e14"
+        },
+        {
+          "canonical_question_id": "external:d8a7585e5f85a0688ed2bc430fb39cc3b185b0a3cf29ad0df5546309561c51ba",
+          "source": "xsum",
+          "source_row_id": "30594854",
+          "split": "train",
+          "question_content_sha256": "519f63337357645cb74e228a38f31b61958a1902bfaa7e12ada7b6461bd7dc82"
+        },
+        {
+          "canonical_question_id": "external:b1e990690d779f5ecc50c7afcef56b944e224f59b6535a66c770751f61cc9fe9",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/1134",
+          "split": "validation",
+          "question_content_sha256": "d516cd4d2318628051810a881e49e78356cccc9387295d18605aacca786e6239"
+        },
+        {
+          "canonical_question_id": "external:3631fc6c8d0da0a0c160e96ca50f580f6fe6a79d99cb8d8957afd4252d276c7c",
+          "source": "dolly",
+          "source_row_id": "4649",
+          "split": "validation",
+          "question_content_sha256": "8d08e9e3395b063227cef9d140a1dfb1ded8720996789f7d11bf62ddaf45cf60"
+        },
+        {
+          "canonical_question_id": "external:c46cef189b98230ce817a441aa9a41ad1d7c01f1130f0fbc76520dc7e834ff61",
+          "source": "hendrycks_math",
+          "source_row_id": "algebra/63",
+          "split": "train",
+          "question_content_sha256": "186da7aacf74180a5f5e21ffb2d56d52b3c0c84dd3777faf443c4e3d73f78fac"
+        },
+        {
+          "canonical_question_id": "external:2c8458923090119d66dcb99842474e092ce597123ba55f1ddf21094dc6f6cc52",
+          "source": "xsum",
+          "source_row_id": "39342460",
+          "split": "validation",
+          "question_content_sha256": "f2a8eb91f508d0f54d514807222fc1352532b166b96a405929bc82b1abd8565a"
+        },
+        {
+          "canonical_question_id": "external:ad5f97281c8703e33f72a3ced26cfc03d573d4dcf193c4d0b9e21a0d32c59c83",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/982",
+          "split": "train",
+          "question_content_sha256": "8b5ec098636334ae55ae9fd35942c0b609e31bd9b06c5cc940a6f97c3a6c3481"
+        },
+        {
+          "canonical_question_id": "external:1765e13cd38d1ff970d04af73c69f8c19f9930246e9164d72344b08ef5c9c1b8",
+          "source": "dolly",
+          "source_row_id": "4161",
+          "split": "train",
+          "question_content_sha256": "213fef5d6e9450bd78502f0295f94ed6afae3cf79a59c70abfc136d252a6d02a"
+        },
+        {
+          "canonical_question_id": "external:c9507fd1d14e5cc756f7cafc27de15b62849075eeeeb0bfa1247e626d96730fb",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/549",
+          "split": "train",
+          "question_content_sha256": "ae0ca4bad6623cf0d5f7a373e1e761d531294b073e80a2385ec7bc5290dff3b6"
+        },
+        {
+          "canonical_question_id": "external:53176f6e8da8b4988fd981f5baf50fac41765216487777386cb6fc12ad4836ed",
+          "source": "xsum",
+          "source_row_id": "36340693",
+          "split": "train",
+          "question_content_sha256": "112924b4665b81234951dfacb2dd02123c0479804cd936db5ff40b60521eb934"
+        },
+        {
+          "canonical_question_id": "external:7861d6640b24ec7801e1f27f55d18a0937faa66c194459e3f8f83d3863565cac",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/705",
+          "split": "train",
+          "question_content_sha256": "e92edd1a80bcbb2a43fcff1bd067deab9dd551dade695271e01f818c3b8dad9a"
+        },
+        {
+          "canonical_question_id": "external:4420ef13298545df77af4f0e7db5943551554dfeab5ac377d0fbe63c0d19ca54",
+          "source": "dolly",
+          "source_row_id": "5738",
+          "split": "train",
+          "question_content_sha256": "567eb248f5c1bf3bbfbdf76add498ebc20c29c4c66f3df50b4825ef07c397444"
+        },
+        {
+          "canonical_question_id": "external:cb45e877552e9c94e2fa1d20a73974545b48a216e17423a4c6ff955b5d1cfa3a",
+          "source": "hendrycks_math",
+          "source_row_id": "precalculus/240",
+          "split": "train",
+          "question_content_sha256": "bd936409238c323131bae5eb46834adaecf7cbcb5c9b2f1670ab420a4a125472"
+        },
+        {
+          "canonical_question_id": "external:0ae84c5fd935405926f74f5f76ecf25b5aefb74b78b4613e827d65545e368245",
+          "source": "xsum",
+          "source_row_id": "33961324",
+          "split": "test",
+          "question_content_sha256": "515027e589c7debd5949c35ee30c175faf77940d32de30a97328cc29007713da"
+        },
+        {
+          "canonical_question_id": "external:3d1a909ad3ebd504b90fced3a35e7aac14a79684054a82e8605844f498dfad84",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/56",
+          "split": "test",
+          "question_content_sha256": "3af94df7bed725cc9a86780871b98f58d88794a850832673a3704ca1f87e2c03"
+        },
+        {
+          "canonical_question_id": "external:a86c3bef6803da44d343141ebb0fa11adebec4c22d85e3edc1af260b7febc9bc",
+          "source": "dolly",
+          "source_row_id": "7986",
+          "split": "train",
+          "question_content_sha256": "ff2c0ae327c2982ce133b188878b869c08ab77478eeb93dad4fab714acb97a03"
+        },
+        {
+          "canonical_question_id": "external:834f267f35d9807db8c26f1a285af16e50ce83fc8a67db47a654e262c2debcd4",
+          "source": "hendrycks_math",
+          "source_row_id": "precalculus/491",
+          "split": "train",
+          "question_content_sha256": "4e771d54732e73b6924133585e402c935bb27e3883c71441876aecdea5332e8f"
+        },
+        {
+          "canonical_question_id": "external:cf21edf1735cc2df35eb8c0dd11761bbb43e53dcfafdf8f102338a98f1420ab5",
+          "source": "xsum",
+          "source_row_id": "36293836",
+          "split": "validation",
+          "question_content_sha256": "a1a49f98036694148bce11f0d4fb7ab6e26b483d408cdd2b6093ca95585d5514"
+        },
+        {
+          "canonical_question_id": "external:50d3633d3648ea42cca0a48eff7113c042723943e31d7e6b6bbc27c3943f32b7",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/807",
+          "split": "validation",
+          "question_content_sha256": "4977c0c50073a72e1b7875827c98db4bbb6035a3db44f524adfaeed98ac87650"
+        },
+        {
+          "canonical_question_id": "external:0f2ea9f2c96b81c4d971eac92408fe6b46bc58c5f16cf1573f9163cedf2b14cd",
+          "source": "dolly",
+          "source_row_id": "1583",
+          "split": "train",
+          "question_content_sha256": "4401a921dfe51334a45412b91b9aa83a805f42236f1f871762cbf0750fd8e72f"
+        },
+        {
+          "canonical_question_id": "external:5f5fbd438277339217e14ae5f19d4c4062916de89322c48ae942a2375976cf6a",
+          "source": "hendrycks_math",
+          "source_row_id": "intermediate_algebra/104",
+          "split": "test",
+          "question_content_sha256": "16614a28ef8ffd41b8b2a6248bed9cc52f239b9d950a795d899875eb9b7c76a1"
+        },
+        {
+          "canonical_question_id": "external:770cb73bafdab94e204bfb17d48e322d13f3fc77b04e1729c4760316734ad656",
+          "source": "xsum",
+          "source_row_id": "39862532",
+          "split": "train",
+          "question_content_sha256": "c77153aaa294d043f22bf9ab4f757200e16a6b318ce1668cf5c224b390988817"
+        },
+        {
+          "canonical_question_id": "external:1f00a331082f952055909bbc83e22a071e79a35afb8c5ab390a0b1f8e36230ef",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/14",
+          "split": "validation",
+          "question_content_sha256": "477d167498a0ed0e1a178c39a44284e3ac8c16acfd2ac9b0573604eb2d701a7e"
+        },
+        {
+          "canonical_question_id": "external:73d680275779e0aa1aed5cd7ac4e4aa785f9de90a22596aabf9604b6fb306d24",
+          "source": "dolly",
+          "source_row_id": "3942",
+          "split": "validation",
+          "question_content_sha256": "279b70d2851fc3a1a6e85d61d32cc6192a58bfe558a3fc5a12e7b24e6f051262"
+        },
+        {
+          "canonical_question_id": "external:064954ac77786c220b77688d961ffef39ea0f0fe68bc3280b311a7078da8d4fc",
+          "source": "hendrycks_math",
+          "source_row_id": "number_theory/570",
+          "split": "train",
+          "question_content_sha256": "129d100347a2c42d6d34a1f19dc8313755c2c22d0391c28070b80f7c98724bcb"
+        },
+        {
+          "canonical_question_id": "external:ed65b21f1d781fe25b1420246a26dfcb61e03ea8101d2cb8cb78947574db4ddf",
+          "source": "xsum",
+          "source_row_id": "31477504",
+          "split": "train",
+          "question_content_sha256": "c2f2264d4d074671f9c5be19ebbed952ba441b49f04fe7ca13a29c6215a19151"
+        },
+        {
+          "canonical_question_id": "external:b8a5e6caba6ea9c46cab84d26d4dc87d53507f94a6a8680678cd936f5f570117",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/88",
+          "split": "train",
+          "question_content_sha256": "94027e8346a0f11fa7e62ac70a4c1d1c74a90cee88c5fb11a478a6a002d07637"
+        },
+        {
+          "canonical_question_id": "external:8394418c63d0e407e8ce5b1fc0e480d8366fa629bd6cfbae4a41b803a35529b8",
+          "source": "dolly",
+          "source_row_id": "11700",
+          "split": "train",
+          "question_content_sha256": "084bad78cdd1afdeafd0c026c64292509ac10d8d3e341cc547147371bb86759b"
+        },
+        {
+          "canonical_question_id": "external:d9ace433bbaac418d80aecbca5b3fc8655b8c398002151ab832590431fcd54e1",
+          "source": "hendrycks_math",
+          "source_row_id": "algebra/967",
+          "split": "train",
+          "question_content_sha256": "babe4cd3399e25a8c5eeb7f06233b3fb98a3f79e4ce773cd0e6b013938510831"
+        },
+        {
+          "canonical_question_id": "external:64e5d8ba3909b0631d3137daf6d1534b1366ddcdbc7d5824e0539dab368d3ecc",
+          "source": "xsum",
+          "source_row_id": "35584625",
+          "split": "train",
+          "question_content_sha256": "7452cd090ce402dfa28c932a7fff35940d81a44fed6464895935d2a9e8cfaff9"
+        },
+        {
+          "canonical_question_id": "external:3baed57e3eb57532b017fcef4d6f8282fd0e4de51e7568eaed8493f538f7ed8a",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/593",
+          "split": "test",
+          "question_content_sha256": "bb5b20196f6e1174aa84296785128f5015817f2a45e8e25866a2d53132efd2d7"
+        },
+        {
+          "canonical_question_id": "external:47117aae7d3d454a204c406f9c7fe978cd9f39ac318dbe2e837356db2b3cfe85",
+          "source": "dolly",
+          "source_row_id": "12528",
+          "split": "train",
+          "question_content_sha256": "2056e25ba234214c87b254e47f7d3a37267e18cdff44bc499b0ca540d8e6c71d"
+        },
+        {
+          "canonical_question_id": "external:342040c30fefd94076f3c076c8cce2d3f8b5554ce3ad8df9db540d54197919df",
+          "source": "hendrycks_math",
+          "source_row_id": "intermediate_algebra/1199",
+          "split": "train",
+          "question_content_sha256": "1b9517d1a8a434bd11aab25ec44606b5f19b1619be28835eeac158678104bf09"
+        },
+        {
+          "canonical_question_id": "external:a53383db0df79dbff9ad605cca73f384647d975c0f2bc6933a91311aa28c6e1d",
+          "source": "xsum",
+          "source_row_id": "35845855",
+          "split": "train",
+          "question_content_sha256": "fa4ca37c2b8702cd667d513375267179966c12fc4293e03e91fd17910ea5820c"
+        },
+        {
+          "canonical_question_id": "external:04e9eb4ba9df83fb43ab156a4c6f0ff36cc15b2e293d07625bb0386e960ab588",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/634",
+          "split": "train",
+          "question_content_sha256": "ef3022ff363dc5d37f4911b874487ffd56c283e8bb89688712ef7f52ba8fe74c"
+        },
+        {
+          "canonical_question_id": "external:5801da5a5157ace69d2309a47efab53a7b7ea98e15b22b7b715641ef9c65f786",
+          "source": "dolly",
+          "source_row_id": "8624",
+          "split": "validation",
+          "question_content_sha256": "bb61a0b73e8004164076745e3f7f45f932f46e50a5b377d21442f287c28d2690"
+        },
+        {
+          "canonical_question_id": "external:1b2d47bf7b9f9bccd6d1f01ace1853df3427bb6efbbf8d1dfdf835c4fe8e45fb",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/490",
+          "split": "test",
+          "question_content_sha256": "6ab909ac5b45e40e64e8c773f8001bb638f7e42e7c233d5050656e72b64d8416"
+        },
+        {
+          "canonical_question_id": "external:ecc8f447ba671b2d1f64c2523f75f4063a552143d41f43009fb1f9a5dfe0d17a",
+          "source": "xsum",
+          "source_row_id": "33017930",
+          "split": "train",
+          "question_content_sha256": "8de42f1cb527766200d59c275f57c6ea2104019a30d3695e46ac7ace985bdf33"
+        },
+        {
+          "canonical_question_id": "external:6918d769eadc7ff3d130af682e45207ea1e91fd780e617831e06e2a954b73323",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/1003",
+          "split": "train",
+          "question_content_sha256": "19704ffc1dd4a811b7e637d6cb84db8bb53bf38eafbd400009a3725a13b91903"
+        },
+        {
+          "canonical_question_id": "external:e5b4bf90c6d17568505ba5b9559b92273b62fbf13f69aad30f9e125e92cd7a6d",
+          "source": "dolly",
+          "source_row_id": "12799",
+          "split": "validation",
+          "question_content_sha256": "e2869069ef2c62ddfa95aef77e14d2183f696929b59e3bf4b1da6436c786c76e"
+        },
+        {
+          "canonical_question_id": "external:e58b709eb54657ffd9483bfdb723fa811558b136b94492e0768b8067a589cc2c",
+          "source": "hendrycks_math",
+          "source_row_id": "counting_and_probability/235",
+          "split": "train",
+          "question_content_sha256": "9dd9fb2d5b0a4b54d24357fa7192e0ae2c159375204282d3285ff23059748443"
+        },
+        {
+          "canonical_question_id": "external:4c6cd9940b7272dca0018039cad57f6488df2e85e7542b28d9dd9dd894ad1b9a",
+          "source": "xsum",
+          "source_row_id": "39352365",
+          "split": "train",
+          "question_content_sha256": "e91e95f374851fb78c147efa638d1dfa1b5c62c5b15c15a76bc5a448c06eaebc"
+        },
+        {
+          "canonical_question_id": "external:4765d3fb27087e2e4884b947bcf5025103b9001f58d3baac09ee9eaa41700904",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/342",
+          "split": "train",
+          "question_content_sha256": "74e5da5dd336751cf6921c957fbe3c021103b0309dd821df704c04ec7d9e3bd9"
+        },
+        {
+          "canonical_question_id": "external:5cac969168d4eeaa47a95d1243f2e6435caea7f3af6717a7b7ad90d2ba447236",
+          "source": "dolly",
+          "source_row_id": "2059",
+          "split": "train",
+          "question_content_sha256": "203f7380bb7762b989bff280651312ab7717e81cb358d1f8fc1cc6e026efefa6"
+        },
+        {
+          "canonical_question_id": "external:73f05602163e10aa9cb5999a846182907d3ebb0239efe8e67e274daf01ebf870",
+          "source": "hendrycks_math",
+          "source_row_id": "precalculus/726",
+          "split": "train",
+          "question_content_sha256": "b7c16220b4d074b182f781a7d48a20af4c4c3f6d8da6d0ed16243be4e3bf5209"
+        },
+        {
+          "canonical_question_id": "external:c0e9fb9abbda43e64724005976b5c3ac73ed18fabce34777723a5298fc73eebd",
+          "source": "xsum",
+          "source_row_id": "36423360",
+          "split": "train",
+          "question_content_sha256": "374ba2354b5450960e354296459bb8aa7796b76f3e45d369bbbbca5d79b36cef"
+        },
+        {
+          "canonical_question_id": "external:08dee251d01c11b35ca922345a492eac84f06cfae6d2625754b122dfb24baf64",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/191",
+          "split": "test",
+          "question_content_sha256": "0e04298856f4e5588ce407f1a039d3e9449e69c7e43104eefeedc01fe9d8f0be"
+        },
+        {
+          "canonical_question_id": "external:869696c75726aabfed9a7ee99f3e21230085eba439d8b5d6a63a86fea61ea72c",
+          "source": "dolly",
+          "source_row_id": "9984",
+          "split": "validation",
+          "question_content_sha256": "93dcf81057326e5dad08488653ce62850a489e74ddd4e3607362adba45d937a4"
+        },
+        {
+          "canonical_question_id": "external:ad4d5f8c69064cd82d15c11eda9c05cb6fc0182cfe8c1387618f6d245cc41dfa",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/476",
+          "split": "train",
+          "question_content_sha256": "234e8bb53d5d091e37330bcf562845f4e481a85f1de77b1841e3c5faac1fe0e0"
+        },
+        {
+          "canonical_question_id": "external:0a30b2d97906f36ada307f2214f280ac6c103b3687a73919e7253e10d89a7b94",
+          "source": "xsum",
+          "source_row_id": "34277895",
+          "split": "validation",
+          "question_content_sha256": "01a5fe9ec66c1239a05fa6553f615b01285a5fc53c75daca9db5797b387f534c"
+        },
+        {
+          "canonical_question_id": "external:d5667418367a470b049758551611a8810bc584d2626c07e7109d66c803be9ae0",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/795",
+          "split": "train",
+          "question_content_sha256": "6a504d81570586980998d9757cb990aa28cd70a2bd4615def84c846c81a2eb05"
+        },
+        {
+          "canonical_question_id": "external:47f5d8e339cfbf553badd18a4278a12fecaf542aa180da19d351ece7c7fa8212",
+          "source": "dolly",
+          "source_row_id": "10855",
+          "split": "train",
+          "question_content_sha256": "82b698159b749f0e776f195bdb3bd3337df9c0894d3aa9d193fb0bdc46dce747"
+        },
+        {
+          "canonical_question_id": "external:cacf45b561ef5d3267c23c6f0b74a0ee58f1c179522a3f36c077f3ecd1447dac",
+          "source": "hendrycks_math",
+          "source_row_id": "algebra/1612",
+          "split": "train",
+          "question_content_sha256": "1646c72f74423104bc5598be57075bf13de18a2f4d6239ebbf26c6280baf71c8"
+        },
+        {
+          "canonical_question_id": "external:5350f9a965b4eb9d3c1f69627a76c9882d018b221e0481ea4482b3afbf118482",
+          "source": "xsum",
+          "source_row_id": "37090380",
+          "split": "train",
+          "question_content_sha256": "809ee7f254a3842631f58dd4e23cb0eedfb4f60702df9777e6701e4bce5f296d"
+        },
+        {
+          "canonical_question_id": "external:3ec49c19affd752bc7ff891415208eb610ed89a01bd7b482628fe7256f9cc8a6",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/426",
+          "split": "train",
+          "question_content_sha256": "7084ac60e162eb6fa4bd91527a3cb63d8ed2aa76b670af3bb0badfb945198c31"
+        },
+        {
+          "canonical_question_id": "external:e12f74fde24af351c698d7ee6f41b968273841c0ec29e2fb4bc5d46089197c4a",
+          "source": "dolly",
+          "source_row_id": "9452",
+          "split": "train",
+          "question_content_sha256": "625e2e0611ba96277f2aa3f623b65bfdcfc118b7899ace92ed84f207d6758b70"
+        },
+        {
+          "canonical_question_id": "external:7e67331ba74a6b86f2f5d0fa55b513a3542f9f6ab7bc6080a8874a8525dcd62d",
+          "source": "hendrycks_math",
+          "source_row_id": "intermediate_algebra/134",
+          "split": "train",
+          "question_content_sha256": "ca1e6deb681ee239a8cc371a154bd2fb34f0ea5e8b6fe772b53b44bc53cff32d"
+        },
+        {
+          "canonical_question_id": "external:91ed7dd29e64c1903e98b97c4f19bfc70b9c2491f1044373f91252df3256b26c",
+          "source": "xsum",
+          "source_row_id": "36118566",
+          "split": "train",
+          "question_content_sha256": "52d9a6d563f924ae48b7ca5c9845f54a2e4d368011a5efe591176fa0191bf716"
+        },
+        {
+          "canonical_question_id": "external:b2f93c08ea54cbf05f7f9163809ea9833671ea4dffd9204282847420ef73150e",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/209",
+          "split": "train",
+          "question_content_sha256": "bdea7d11298e7ccc9f106e1b0e1b569974c2b8913c9e893471766a0f52d87684"
+        },
+        {
+          "canonical_question_id": "external:25b0aea1ac6ea0d54c2c84aa4ab2b7953dcdb79963da196234c357967be20455",
+          "source": "dolly",
+          "source_row_id": "12326",
+          "split": "train",
+          "question_content_sha256": "3d90c1c42ea1c8b56e12f0a076e3d1235ebe32901d061d3b086a8077e7ba33f5"
+        },
+        {
+          "canonical_question_id": "external:1d773ea7ca0a45e2071b7f4dc93f6d3aac0f36a1ae0a393f93ca449525c6e9fe",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/512",
+          "split": "validation",
+          "question_content_sha256": "5ad63266b5729753d470da06ef6bf3339267ff57b183fc3ec7c0ccd5c679e18d"
+        },
+        {
+          "canonical_question_id": "external:f9d3c4ff898ac49da182e39fca4572ed2e009364faae99c03ba45a6b7ba01cfe",
+          "source": "xsum",
+          "source_row_id": "37360153",
+          "split": "test",
+          "question_content_sha256": "f02a3a93c36d629f1973d4a9f748fd48c049a0f81442ad0aaa77de5155a8e278"
+        },
+        {
+          "canonical_question_id": "external:d2afdc19d4eb9c976eb25586b700a4ef74910b0e95698172611207bf663cd43a",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/229",
+          "split": "train",
+          "question_content_sha256": "65eab0d46b23a49862d4d76ff1461385331200907fd8f8c87fa40ed8a7fc854d"
+        },
+        {
+          "canonical_question_id": "external:3e3d5b581cc6236f03877c313b2c2844716362815295cee45a50dfb1d00e39c4",
+          "source": "dolly",
+          "source_row_id": "1810",
+          "split": "train",
+          "question_content_sha256": "20a1e1b67630c3dc68fcb37983bddd197b89a25529c66abef7b883c9afdcf777"
+        },
+        {
+          "canonical_question_id": "external:848fd91d518cc51b2c037d981f71ad9a16f22598cb3e49b62115dd5e9c720de5",
+          "source": "hendrycks_math",
+          "source_row_id": "intermediate_algebra/983",
+          "split": "train",
+          "question_content_sha256": "c5885dd2462ae75ea5c75995afdcf7df30be027f85600c79a8356767e7779bfd"
+        },
+        {
+          "canonical_question_id": "external:0615943239028c709c1fe5c450b551f565db18ea214f137daee3b315038af1ab",
+          "source": "xsum",
+          "source_row_id": "38491515",
+          "split": "validation",
+          "question_content_sha256": "c0632332d35007b8d660ff1a520479a44c502a2137bfd7b8e73ce167f8753ab8"
+        },
+        {
+          "canonical_question_id": "external:b3eea7623d48cf505168a45aa41d0f4f2bd066f07574d87dab3028297321fe85",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/1059",
+          "split": "validation",
+          "question_content_sha256": "618bdaabc9d5d0bf532604a57b84a42e60bf29e5b97853b48cc0c9c6681518f2"
+        },
+        {
+          "canonical_question_id": "external:a0893a9d296cb26abbf42b7555f79144331c4a2b1f280bdc73edf207bc1f7bf3",
+          "source": "dolly",
+          "source_row_id": "14033",
+          "split": "train",
+          "question_content_sha256": "633de48b41b1c61ebfdff40f65d715539f50912d5a88d5201c36abb744861ca0"
+        },
+        {
+          "canonical_question_id": "external:7a4acefaab2d5a4e0b05900d2ba4f3a591320a943ab38e8b8a34e93e59aad632",
+          "source": "hendrycks_math",
+          "source_row_id": "counting_and_probability/7",
+          "split": "train",
+          "question_content_sha256": "834fcf5c17f7e47c9c1b0c435d17a8c8e10e40c308960d305dd45691a6942e77"
+        },
+        {
+          "canonical_question_id": "external:04b3fad1bd0590240899cdd7bdeb1de8b62aca72b605b8f7d82f9abbf3f7016b",
+          "source": "xsum",
+          "source_row_id": "39555727",
+          "split": "train",
+          "question_content_sha256": "c7f98f4410d9e4936f1e394670a859951b987e17f12d89f2d9260dc24d121102"
+        },
+        {
+          "canonical_question_id": "external:217cd9004354132359fb0f0b4f944b77c609e2dbdc7a086a05bb8a0c6d95033b",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/526",
+          "split": "train",
+          "question_content_sha256": "63a90875e517b9050861334704d6b8bae1bb030540e31871b84aa72ef2e96ea5"
+        },
+        {
+          "canonical_question_id": "external:566d8d828af1c0785220fe9337190b063515a6bd3caac842d58258782aff40d2",
+          "source": "dolly",
+          "source_row_id": "579",
+          "split": "train",
+          "question_content_sha256": "6da1fc475c3239c9d0cd1788cfa8f3160b7245fc7cdf9c00fa9c3d2b6f9c2b57"
+        },
+        {
+          "canonical_question_id": "external:c69cc2a24715cc67d0e314e499e00ea865fe7bcb51ff4d2111e5856cd9ac0399",
+          "source": "hendrycks_math",
+          "source_row_id": "algebra/1053",
+          "split": "train",
+          "question_content_sha256": "398184c9391e43c16af78e6f7abfca407a734cf18eed8e4defe976a5e81b30f5"
+        },
+        {
+          "canonical_question_id": "external:c002cdcea7931ccf5f291e0baba8212a056ee7ca433e16965465705eb46c0655",
+          "source": "xsum",
+          "source_row_id": "23238584",
+          "split": "train",
+          "question_content_sha256": "ea8a9d96d6fb1bb0b503c7503651269bd1d5827c6f86a9feb18b004946a729be"
+        },
+        {
+          "canonical_question_id": "external:2dcaa4d231888abbbc20c3e087e7366f71dc99d29bb82fb4b7f9cdc31c177f5d",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/1100",
+          "split": "validation",
+          "question_content_sha256": "c18f6fde50af6da131dd32c1ebcebec0dfbeb3caa7b660a4245f524a1cbe0c47"
+        },
+        {
+          "canonical_question_id": "external:cb8cdc56137d5f3a8a5aa47fe5752a9ae1d6d1249428dcea347d1961fd4b8137",
+          "source": "dolly",
+          "source_row_id": "12391",
+          "split": "test",
+          "question_content_sha256": "46062cd1456104de50a2fbb27fef60e78cde6ad1b01ebbe1ea6fb8881dff3ffb"
+        },
+        {
+          "canonical_question_id": "external:a040ba639b4f24e6ce60d5e4217502c6f4b3218a22c8d04899f8bb5fb18e30eb",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/801",
+          "split": "train",
+          "question_content_sha256": "6e39e06d541ea603605db8dec15b1e20c4df4121ed023853d3c34606ab149d9e"
+        },
+        {
+          "canonical_question_id": "external:6d8a2378e8d7a1fdb948850f050607d3685efface53542f241f4057fe3dc0382",
+          "source": "xsum",
+          "source_row_id": "22085535",
+          "split": "train",
+          "question_content_sha256": "b6ca51d49a5c0853a5268adb0fe61f8e57575d70ba341859fff7f053ecd20e9c"
+        },
+        {
+          "canonical_question_id": "external:1bc703330fb525e1eb3ed288fb54cca9cfcc2c1538d4cbf9af95a8ee0e0ca3ea",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/525",
+          "split": "validation",
+          "question_content_sha256": "e5388b4da1ecf17940f2c58833d2d743c2134450708bd4ce8f8743079835ef30"
+        },
+        {
+          "canonical_question_id": "external:5dffeb03192b6e9146cdba7962f21ece27c6a494e8593cd48da0fa1d406061c2",
+          "source": "dolly",
+          "source_row_id": "4111",
+          "split": "train",
+          "question_content_sha256": "f3fccf366e02e1ce854f26bf8711eb70ad0c66da90837649915f82d812a8f1ee"
+        },
+        {
+          "canonical_question_id": "external:771c58b2cba0e6649c146039444cfb2e28b4289f2f4e4d9d7267e8f18dc424a1",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/766",
+          "split": "validation",
+          "question_content_sha256": "b290354df4a807d906e9b7b985113d8f9aa1cbc2aa60331966617470b482733a"
+        },
+        {
+          "canonical_question_id": "external:02b5faa85fcb77a0692c9df3cfaab17e9d278d6f4516fd89157ed870d759290a",
+          "source": "xsum",
+          "source_row_id": "34886413",
+          "split": "train",
+          "question_content_sha256": "02b62656665501566994df930747bed3dfac00ecc2135f4a3c7122f2bf53dfc0"
+        },
+        {
+          "canonical_question_id": "external:a6b6d4c490c7b2e0fe3ed3d74a49555f8f7408df6aed3bd540667e0480395d36",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/227",
+          "split": "train",
+          "question_content_sha256": "29bdf598020d0176c531b3d70d77df84f5172eed0da62f129e73723fc5984791"
+        },
+        {
+          "canonical_question_id": "external:ec3d8480e9e63415bd2f2909de435efea86dd8c700b3ed37d5e02c51d0c7c89f",
+          "source": "dolly",
+          "source_row_id": "4468",
+          "split": "train",
+          "question_content_sha256": "c96e0a8f2a4ea3b70ef3ccdf1ebe3a5b75d692a3ac3f6c8901d36afc777c7149"
+        },
+        {
+          "canonical_question_id": "external:b6c62f5b79035eb9ee9b84fbee4949a1fd924e3db70362f2b61f347b3fd5bbf9",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/714",
+          "split": "train",
+          "question_content_sha256": "92f5e1714ac76a360d3c770dd01d7249671c815a128e86fed2ade1efa744f114"
+        },
+        {
+          "canonical_question_id": "external:654a4cd529f35e805d1f2717258c8e1eaa7c20cf42d494ab6138297da6c7491b",
+          "source": "xsum",
+          "source_row_id": "39733452",
+          "split": "validation",
+          "question_content_sha256": "98692331f2fce08578392355ec770e051615041d12d376e8bea9ec98139b8073"
+        },
+        {
+          "canonical_question_id": "external:1fa9bf8538834ad4b0d9ef4a66c369720db92c66696b6af6e85bd47da8a62ef5",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/1035",
+          "split": "train",
+          "question_content_sha256": "653a71c9871ae5405069599a0b3e5b1c34d0d83493e4c20f21cd6190dc41dd1c"
+        },
+        {
+          "canonical_question_id": "external:b0d7a8918f9e6f8d0041e72f2f4aaa57b7e28d3a68109f2368f5ce3a7a23e59c",
+          "source": "dolly",
+          "source_row_id": "10779",
+          "split": "validation",
+          "question_content_sha256": "79f01130014d487bf609551f5b4dccda8bad0b036d30a84666f8f627bcdcaa43"
+        },
+        {
+          "canonical_question_id": "external:2b1d8c4ee283396c07b219a161ebe01244978030906386e508c2a612e08fcbce",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/300",
+          "split": "train",
+          "question_content_sha256": "d762223db0d2d6137cb6c5014f1f5c23067d9aa95847ca405dadd64eddb40ffa"
+        },
+        {
+          "canonical_question_id": "external:748f8ce5199dd986822e7b4563541358c034b6adc5dcacef55f9078b5656469a",
+          "source": "xsum",
+          "source_row_id": "39908545",
+          "split": "train",
+          "question_content_sha256": "4d826ae17be60c0e33f691c5325498b4f77dfd2ccbc204e281fb71532e737b19"
+        },
+        {
+          "canonical_question_id": "external:93d8f0b5b13ae12d4bc1fbbc7aa5c279ed90f94069f484e3fe4105f43795ab11",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/361",
+          "split": "train",
+          "question_content_sha256": "5a247dabd495cfca9c91c10c8a9c5602f1cfb9581471fbe57b4fd2be5e0b263e"
+        },
+        {
+          "canonical_question_id": "external:6e0ab7e953a10ec50684f8f437be8b3c141f80f4c098a2aa4847309cd28e19f9",
+          "source": "dolly",
+          "source_row_id": "14128",
+          "split": "train",
+          "question_content_sha256": "102bb390282030bc3d0126b4b721d4af701150e5a5a005a2d7db59a2031994fb"
+        },
+        {
+          "canonical_question_id": "external:aa1ba899d0e7b06ea8cbaf22f200d2172caf11ded1f86b604d2ccaec738ba66e",
+          "source": "hendrycks_math",
+          "source_row_id": "precalculus/147",
+          "split": "train",
+          "question_content_sha256": "fcd197e73add8071d0bd9418478dc63740d574693e4285774ba6b546a684b070"
+        },
+        {
+          "canonical_question_id": "external:9164c3ea1a698cca29d65d246b2733df4a44c7a2f4147b38ea715477329167ca",
+          "source": "xsum",
+          "source_row_id": "40952606",
+          "split": "validation",
+          "question_content_sha256": "9ecd4fcd1c56723ea8156c491aeb4bf4f5454b18c95357696e6f3c803579a8ce"
+        },
+        {
+          "canonical_question_id": "external:6d302c7642954a31d4a14878f228550b1e8e72ce0d5318398a3c90419054bc1f",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/640",
+          "split": "train",
+          "question_content_sha256": "50755f6dc87fb3c8f3dfe17583b40b0e62e59f2f5192561e6a40ea67282410e7"
+        },
+        {
+          "canonical_question_id": "external:cc3f92e5a3f783f73daf47bb8646c5fcc82b56049a9ced056f54ee4392c07672",
+          "source": "dolly",
+          "source_row_id": "6102",
+          "split": "train",
+          "question_content_sha256": "54085e21586b41a817775ed2bc70ae1ae09ea52aa280a0182a8d8072702431bb"
+        },
+        {
+          "canonical_question_id": "external:124b1514c4e0eb8782c8e0409396731f4ca6264ad53b817c631760ffea8b1f1a",
+          "source": "hendrycks_math",
+          "source_row_id": "counting_and_probability/632",
+          "split": "validation",
+          "question_content_sha256": "39e8c03827f1290b6b898898db7f4d3a8fe075765ed8c25ae027d2c0ebd53c2a"
+        },
+        {
+          "canonical_question_id": "external:8a3269c9c276805d2f7407bbabdfc5ff9553afd518a8527840733cbe2774553e",
+          "source": "xsum",
+          "source_row_id": "28628577",
+          "split": "train",
+          "question_content_sha256": "5fff3c46307502aa9dbeec72c3980a6fcb0b6bdce87e9ca225d29236a6146cf4"
+        },
+        {
+          "canonical_question_id": "external:db6aef382bc0b37531e6e22fa986f9c245ddb06ac938519c5bcce712b2c916a0",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/91",
+          "split": "validation",
+          "question_content_sha256": "36da2ad2128b41b55137462da3a27161677fc77297c25cb232ddcfde24abcf3a"
+        },
+        {
+          "canonical_question_id": "external:d3159d5787b29a73be9393f650c92c66b69e580a11afb30713f621c0924dbc2d",
+          "source": "dolly",
+          "source_row_id": "11417",
+          "split": "train",
+          "question_content_sha256": "6ffd23d685b0e3907f3db93f7632feeb2c92e9b73993dfd9e170e8d17c5e4f9e"
+        },
+        {
+          "canonical_question_id": "external:70467b74e690f8eddc484fe1693c87bd4bb628f7e6a8f1ffc595385833b661ad",
+          "source": "hendrycks_math",
+          "source_row_id": "number_theory/220",
+          "split": "train",
+          "question_content_sha256": "4c0278f9e73e65c09c20f815ed87e7f5782d704c2f3915bbf2a0300fb9ce98c7"
+        },
+        {
+          "canonical_question_id": "external:01995010fb41822cd97d6ff071e59ead57f748a5946a04cc4688aaab2964fd73",
+          "source": "xsum",
+          "source_row_id": "32419574",
+          "split": "train",
+          "question_content_sha256": "b9aab7d0adc443584bed0c3a57341ede6d3e46e792a918a4c1172961eb026622"
+        },
+        {
+          "canonical_question_id": "external:be8d32e41edcef0cdbec5644ec9443a57d13961147340fdb43633fb2c0d0d8c0",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/533",
+          "split": "train",
+          "question_content_sha256": "6b0aa54aead279e88ec2b9c1782511221bcf19b0034aa2bd9e54bb9afb5a02b3"
+        },
+        {
+          "canonical_question_id": "external:b82eb3c57594552be5a9fd431e8418439489f99972b631607f1f1b506e96758f",
+          "source": "dolly",
+          "source_row_id": "279",
+          "split": "train",
+          "question_content_sha256": "0eb73ddcb41f663ca34202349a8e87c064a58c3fd136eecd8404d8fde3628ab4"
+        },
+        {
+          "canonical_question_id": "external:b24119158fbda2ee5c0ea1c22682af72c3f6eac101b6f2e706010023f05c9c5c",
+          "source": "hendrycks_math",
+          "source_row_id": "precalculus/666",
+          "split": "train",
+          "question_content_sha256": "f87ee944adbadee8a5011d6e342788d04a5355d8b7ff73d59d516e46a51e9999"
+        },
+        {
+          "canonical_question_id": "external:7aef77f3bd1d1ed54a11a85936ecbccca6f4ef4aaef85e9b2142c97a223cd5d0",
+          "source": "xsum",
+          "source_row_id": "32194318",
+          "split": "train",
+          "question_content_sha256": "c55e603208a599d2414616a38c0e08c512a6acc7d563263354399d89b43258d1"
+        },
+        {
+          "canonical_question_id": "external:b0eb3c7213d9047d1081c6946bbd6093feb1b2f42a8d5ee139b79db3bd0dd193",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/569",
+          "split": "validation",
+          "question_content_sha256": "2aabcf23a8abb587d1d569d3949f6f99249a9b4a6c8af4b5fb9b855bcd40b321"
+        },
+        {
+          "canonical_question_id": "external:508225f20d0db27173a015da9c3e9542d93ebb1fe752d401db1e0a37a3d381fb",
+          "source": "dolly",
+          "source_row_id": "5489",
+          "split": "train",
+          "question_content_sha256": "10e6582621642415e1abeb08f0ca127fb4ede2a793c0dff797c31efc070cc2a4"
+        },
+        {
+          "canonical_question_id": "external:349f0fdbfb22eaaecbd502c64d36e73794ddf749e99d37205c8be44b8d7f308f",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/568",
+          "split": "test",
+          "question_content_sha256": "31f6d8c781fbd7d4cbdd244afdf0a1abd4ab1a5e1ffb237db557dd83c141b834"
+        },
+        {
+          "canonical_question_id": "external:8f8c1e492dd817d7dc35c2dd12fa0c83dd079b9ba10042c36c43eaf94e4244ad",
+          "source": "xsum",
+          "source_row_id": "38598313",
+          "split": "train",
+          "question_content_sha256": "d2a1a6ac118cae4725c76615c5efc41c2dc96cb2ecfc36b4f6cdfed5ce9ad341"
+        },
+        {
+          "canonical_question_id": "external:aa042a2e6ebeeeb5d50290f945570fcb699063e3f0243c3076b9eaae52e81eea",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/3",
+          "split": "train",
+          "question_content_sha256": "1966f4e039c8f278ce8d40d46060dcc58979a944cc29891ead6cee7ff1c4ed23"
+        },
+        {
+          "canonical_question_id": "external:57b0b3ee635ae8309ca1c607b9cf90b75f46eb43beaf60b3055369943f8adc39",
+          "source": "dolly",
+          "source_row_id": "9724",
+          "split": "train",
+          "question_content_sha256": "a14b4f3955e6e0efb84d4f48cb6f4b29f84d9c37aa4aab217253b0315ec8dbd1"
+        },
+        {
+          "canonical_question_id": "external:86dd918c2351d605a029d7016d8d11a5de9631a80a43ba57ce41057f2a670d88",
+          "source": "hendrycks_math",
+          "source_row_id": "algebra/1070",
+          "split": "train",
+          "question_content_sha256": "7c649a932a3e72dc3d57f86e2eeb5608c3f0f8c4d26b085216d88a795a881320"
+        },
+        {
+          "canonical_question_id": "external:6171d29df9361aea8ba4368285057ef68f9f1523bbffbcc3b7c55693010d2369",
+          "source": "xsum",
+          "source_row_id": "40517207",
+          "split": "train",
+          "question_content_sha256": "d9adb7f84f0953a4840c1e93fe08ed4029d2c4e600f62d8c74a77b58b7fc80fc"
+        },
+        {
+          "canonical_question_id": "external:bad04ae4124ba211707ceeaed5ae8dec730f6291fe47247f17ef939f41340548",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/451",
+          "split": "train",
+          "question_content_sha256": "067d157a7db16a58806b010234e42d4a8e3c6a532dd58fc9a1711a4a91255dbc"
+        },
+        {
+          "canonical_question_id": "external:7a555a5e2467c5c82a06310e328feacd9fa9094c2801ab3cfd32992ac327b5d1",
+          "source": "dolly",
+          "source_row_id": "9529",
+          "split": "train",
+          "question_content_sha256": "bbd4e9b009a93f0ff152b6cc4eb82c30507f923e18d3c00701bd929aa072841f"
+        },
+        {
+          "canonical_question_id": "external:2a46aa1975acd4379c5ea80ad98918bf38261679de931b62a66f68b0a9fdf78a",
+          "source": "hendrycks_math",
+          "source_row_id": "counting_and_probability/647",
+          "split": "validation",
+          "question_content_sha256": "225b1dd77b1b4079eed4950799e83b2d623643f91c1e7ab3f42ac7f733b8f583"
+        },
+        {
+          "canonical_question_id": "external:6fa0105abdc26b30d8bd5aa372c214d08e3c6a38245d708e43035f0d4f8a6765",
+          "source": "xsum",
+          "source_row_id": "33719395",
+          "split": "validation",
+          "question_content_sha256": "ad5e7761deaa5b12deef65701c00fabad1110673ebacd1924fb938c9c5e2dbaf"
+        },
+        {
+          "canonical_question_id": "external:de72531369d4e1212710a82973a118ce39e087980f377819b78391e4de8910ee",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/269",
+          "split": "train",
+          "question_content_sha256": "1f193a54a380ab1d2908f08d53fbeda520704563b1dc0f214c480a78baf6166e"
+        },
+        {
+          "canonical_question_id": "external:2364626c5991eea590774cfb3d712310137bf860fb7accad1c8bc9151ffde76f",
+          "source": "dolly",
+          "source_row_id": "7694",
+          "split": "validation",
+          "question_content_sha256": "2c287be0df810ddf4ae7afed9ec465bd8f7f327b17132ac7220aa70a0e836db1"
+        },
+        {
+          "canonical_question_id": "external:f68669bf31e96224413cc050749a44e82ce616797147040e30fabf5c8c693370",
+          "source": "hendrycks_math",
+          "source_row_id": "counting_and_probability/191",
+          "split": "train",
+          "question_content_sha256": "9d0fbfc2e6fc0c26e39ef595c00658a75125ce2804e03ccde13a11d3e51e93ca"
+        },
+        {
+          "canonical_question_id": "external:b4b5f46e320e74021b636888cbaa5bd5d9a8ba15899c10981085e882073834f2",
+          "source": "xsum",
+          "source_row_id": "32095189",
+          "split": "train",
+          "question_content_sha256": "ca1921ff26946587549bcc252bda6f9f865d0c8c7d5f473c0cfa74f0fa0eb8c1"
+        },
+        {
+          "canonical_question_id": "external:1a0c7bb8fbac19613759e043a38340c7438b6e53ea699cd586f3994ac4ebf76d",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/472",
+          "split": "train",
+          "question_content_sha256": "801a8400bda1591ac9a4f22806cef4bd7519165e065ad2d1b13eb3177357bae1"
+        },
+        {
+          "canonical_question_id": "external:da45e5d36785251fc63b0fcd021b3e01fd576c8cdd693bf857c0a77bd8f2d8ff",
+          "source": "dolly",
+          "source_row_id": "8541",
+          "split": "validation",
+          "question_content_sha256": "f2608c071cf7e44008e6f08d808db821bec301678d81e353851fd6ea804ad966"
+        },
+        {
+          "canonical_question_id": "external:b448b9f51f422bd05b8d10c65a37d4db387b232a472259bca6f6020cf6a762b7",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/200",
+          "split": "train",
+          "question_content_sha256": "02c704eda0d330a9a7c5dd4565bd029b92a05c9350800335cb5165f806c62c6c"
+        },
+        {
+          "canonical_question_id": "external:d8aee21c6d714d276c41e59ff0a3c11397f3c0bdcce21c2919a380c15f2bea84",
+          "source": "xsum",
+          "source_row_id": "35713385",
+          "split": "train",
+          "question_content_sha256": "92899f8a803b4354d611aa131a9de0556a7c0fcab391b2940089444b773ec98d"
+        },
+        {
+          "canonical_question_id": "external:d0a4a33029b5c9ec6a5abd013116ced712bef3c68495af9c61741b3926f84d64",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/592",
+          "split": "train",
+          "question_content_sha256": "3bb2902423566798d3ac57b58d4388f010c49d538d1779555115442b813515d1"
+        },
+        {
+          "canonical_question_id": "external:146c04e43cb400817882a7a0ae93886a4079f6c988f8afb5ba0335ef47255b5d",
+          "source": "dolly",
+          "source_row_id": "14298",
+          "split": "train",
+          "question_content_sha256": "0765fc48f28b1f97655feb04794b18baf8e1f291f5a69dcf7fc2ac9b486efea7"
+        },
+        {
+          "canonical_question_id": "external:b0e51dee27ceacf38b866fba880ca57031028886f973a1cf98dce5f4e2429efb",
+          "source": "hendrycks_math",
+          "source_row_id": "intermediate_algebra/139",
+          "split": "train",
+          "question_content_sha256": "2d571dc15570d57db92736e894f4b075f5874ba2c3e08081e79302d6b57b504e"
+        },
+        {
+          "canonical_question_id": "external:f9ec83fad61fe6e8fd98c76a7ebf8b995a378b45043b46df4200c7fc836a2f81",
+          "source": "xsum",
+          "source_row_id": "35284225",
+          "split": "test",
+          "question_content_sha256": "60b92bc2322aaccc6eb290ab4263c532b8ceba0d3ff9eee960d4f0ebe6ee9a96"
+        },
+        {
+          "canonical_question_id": "external:f41743f24a217ef51a6214815e50c7ee8ada1de36853e7a3a6b2ac5b5e414428",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/81",
+          "split": "train",
+          "question_content_sha256": "91ab0ad90a888ae606bafb7c69e3e1b654ecad676a4f72fa0efc6e82fd14042f"
+        },
+        {
+          "canonical_question_id": "external:95aae45f3010bf2d71c6d535f7e0509a64cd5baeb00542b444f4508bf89a87ac",
+          "source": "dolly",
+          "source_row_id": "714",
+          "split": "train",
+          "question_content_sha256": "bcf2e073d332ac2e824a24674b20fd6a06b67f3c125fff412d1de33b80210648"
+        },
+        {
+          "canonical_question_id": "external:aef1818022103515c6c56b72e5428963e30bcb8077cfb2603e5c0ee094f99a92",
+          "source": "hendrycks_math",
+          "source_row_id": "algebra/1402",
+          "split": "train",
+          "question_content_sha256": "b91ca564be551f52c6a52969e349de667fb2c76461d4ece97f925aab117893f4"
+        },
+        {
+          "canonical_question_id": "external:5a2c9622f846a048e0ac33621a79f62533d5c210460deb92c496428f83811bbf",
+          "source": "xsum",
+          "source_row_id": "38194740",
+          "split": "train",
+          "question_content_sha256": "0a437916cd9cf014e02824828a2f0d3f851b1e30851b24865811f790a5b8b23d"
+        },
+        {
+          "canonical_question_id": "external:e9ecf27ba51729fd87b50ec99724f28e39ad9c4b265ee197fb301405bc0c0087",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/318",
+          "split": "train",
+          "question_content_sha256": "d8661f051b5cecb15cf4a438e3578c18e730ab52d8d88835ef653a1d4e517d68"
+        },
+        {
+          "canonical_question_id": "external:486cec52ca623f2928fe3297c0f04e68bb5d509631aff9f75607cfb39e4887eb",
+          "source": "dolly",
+          "source_row_id": "13141",
+          "split": "train",
+          "question_content_sha256": "b6f6a4fc107c0fc728f78969832a4967f8fb3800d562860e4738f2fcf0972a72"
+        },
+        {
+          "canonical_question_id": "external:7c32a21e1ad7fc2c95b33f8b3a6ed93bc6470557aa8a8c15427c5b393cb65954",
+          "source": "hendrycks_math",
+          "source_row_id": "precalculus/400",
+          "split": "train",
+          "question_content_sha256": "4ff62d6dfb3bbf8b1489b24e0f13f53bb10a3412d603de361d9663b869d6ea1e"
+        },
+        {
+          "canonical_question_id": "external:4a803e0382213da51e4bc7f0403615646e1f7e3a9cb09788c1dfdf371aa11eaa",
+          "source": "xsum",
+          "source_row_id": "35064336",
+          "split": "train",
+          "question_content_sha256": "c8c49023a9d13d31fd42d119e4378c7fa05f3bce0ae38d70df2a8b8aec3f8f86"
+        },
+        {
+          "canonical_question_id": "external:f1694343d468def9ca3989a992eebf74fc86c57ff1cd24bb7175d85f03177e1a",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/278",
+          "split": "train",
+          "question_content_sha256": "331ee9a5a04bc22c881194788c4d0f11f6f2cbfd5f527c59bc58abd7d0623039"
+        },
+        {
+          "canonical_question_id": "external:ab12ceb4c65ffb7f9d0d8546a5f9cd4c5e555175327e5b49fe5e5089a510b0a5",
+          "source": "dolly",
+          "source_row_id": "11",
+          "split": "train",
+          "question_content_sha256": "4278bb131f3942505ef7a68cac796033dd8025b1df4a3c19fa42b37000dfdd69"
+        },
+        {
+          "canonical_question_id": "external:6679033504976b158c13d012dc956716de7585b85caf62289b2feca169412a2d",
+          "source": "hendrycks_math",
+          "source_row_id": "precalculus/189",
+          "split": "validation",
+          "question_content_sha256": "81e1b0cb454aee9c2a2b7a998ede97409a3c3470852d36cfef97cc7c8ea5e726"
+        },
+        {
+          "canonical_question_id": "external:bd5c7783123e813e87479c83ef1edeee4792efd3633690302ec1fd0e431c9ff2",
+          "source": "xsum",
+          "source_row_id": "35484773",
+          "split": "train",
+          "question_content_sha256": "516333cf442be65043d6a555ac6a1a99e2f6eb0bb6bb1ef85262e68fab686b25"
+        },
+        {
+          "canonical_question_id": "external:f622bf966d8c368e8150adcf58946a51560f5beac451428037229e61a9cdb3c6",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/631",
+          "split": "train",
+          "question_content_sha256": "d066f8cc229f374ae08648d63c6d689b22d060e041b651ba21cacc34a83ccb6f"
+        },
+        {
+          "canonical_question_id": "external:bbe54e174a0d04db5c13186b7c0a1c3425018069b0db3e17336b7e087f5dd4f3",
+          "source": "dolly",
+          "source_row_id": "670",
+          "split": "train",
+          "question_content_sha256": "f51d05d2ad21912f27097a63d882ca88bd73756916ed4d0f8483592c59c47141"
+        },
+        {
+          "canonical_question_id": "external:bd17652b5ceddcd5e211be69b50b2ab676af0535464be9788509d5cd3d37b8f1",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/20",
+          "split": "train",
+          "question_content_sha256": "2eaff1d04d544565d9290b2c828d22d1b8260828e82ce7447c9db18d0af6223d"
+        },
+        {
+          "canonical_question_id": "external:5d9408f7e22e978d616621eaf8c21deaa62cb3e6490ddb1113a6d864894661db",
+          "source": "xsum",
+          "source_row_id": "38953317",
+          "split": "train",
+          "question_content_sha256": "9ea945195367d1ea351c0b5cc133437d30bd9cdfc6aa445e24220a64bb7b69e4"
+        },
+        {
+          "canonical_question_id": "external:ce2cfbcc2b78c00638915266894beb4ece3e6ad1336b285147d17a57921c4bfe",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/430",
+          "split": "train",
+          "question_content_sha256": "53ec055cb129c9daca12b70ceedcc08fae669b0f568fcdbf94c8e03bc748637f"
+        },
+        {
+          "canonical_question_id": "external:1f80c071a0c72355e4b9d99ca225f0bc7c6d34b869cc5b904ceed5015e07e69c",
+          "source": "dolly",
+          "source_row_id": "1220",
+          "split": "train",
+          "question_content_sha256": "156f9c78cd20bd1aac603389d27b11b8209e7283d8e954af1646f6da0ce18931"
+        },
+        {
+          "canonical_question_id": "external:0419965439dc787c38f72f08f152569937f0126f3d2a77c3ed89afd440813d9f",
+          "source": "hendrycks_math",
+          "source_row_id": "algebra/1479",
+          "split": "validation",
+          "question_content_sha256": "504dc6e45a6e8e2f9b008de46bdb4fb62ea37df9743e2871e035f7448fc41928"
+        },
+        {
+          "canonical_question_id": "external:408343f4d704cda9a39f3fcc511d3d427734450dfb35b24fef1169804e41eff9",
+          "source": "xsum",
+          "source_row_id": "38743089",
+          "split": "validation",
+          "question_content_sha256": "bd1ced111e0326d11d5d6c4b5a20998c05119739dbc3afc55baa15a6846ce754"
+        },
+        {
+          "canonical_question_id": "external:b953a5b8646e4576809d0dfe576be7328f995d86866b224a01cc9d826da6adac",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/388",
+          "split": "train",
+          "question_content_sha256": "a7db219b453284087cb9b126368540ac1b9afb53c8e119be1624cfde2c6c4b97"
+        },
+        {
+          "canonical_question_id": "external:3f8e3742264bc699c8ede764bb92b36d24ff8e789715f79b62d3bf6781f87311",
+          "source": "dolly",
+          "source_row_id": "14124",
+          "split": "train",
+          "question_content_sha256": "1ce105836a9b559fc9af1e8e893469185571d872f2f9dfa04f6e68b62df73d7a"
+        },
+        {
+          "canonical_question_id": "external:66bfb7ac9324a6ef388045e8e084d251ed1315d66e4b693bb6beb2c7e79d429e",
+          "source": "hendrycks_math",
+          "source_row_id": "precalculus/205",
+          "split": "train",
+          "question_content_sha256": "264fe117666c23abadc639975822d9c57f74a7a3dc3a65bcfb4930170be768a4"
+        },
+        {
+          "canonical_question_id": "external:dc470625cfaee818b228091ac28f9145299a2f699249761900d97854168864ec",
+          "source": "xsum",
+          "source_row_id": "36315883",
+          "split": "validation",
+          "question_content_sha256": "c2171e46f35ce8905e87000e0a302f135cfa8c1266cb92961b4cab0a93a8a7b6"
+        },
+        {
+          "canonical_question_id": "external:5335a2fd038cfd28516d90e264fefecbc83fbba87d2df75c58470b3d7f28a67e",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/568",
+          "split": "test",
+          "question_content_sha256": "ee818735f1abb7ab56f81a32eba5e5408c37bb53ec16d2ad8d482cd6737beff2"
+        },
+        {
+          "canonical_question_id": "external:df2d88e84c87c438e66af9b7397308910e0b3e6be2d9cf5bbb0d3c34fff6eaee",
+          "source": "dolly",
+          "source_row_id": "13200",
+          "split": "train",
+          "question_content_sha256": "1e8ae71fd81ab1c297bab183f3dc96bef00b775524f705582ba2c6a0bffc41e4"
+        },
+        {
+          "canonical_question_id": "external:3f6c9558341687c62e7701323b1fab40b2b335e6d9a435ace60641a6700ce5ad",
+          "source": "hendrycks_math",
+          "source_row_id": "number_theory/57",
+          "split": "test",
+          "question_content_sha256": "fc22fd68f3fa17ecb9488b6bf29eede933e1b1f1aa2335a674d38a9ba011aa84"
+        },
+        {
+          "canonical_question_id": "external:9a637a0dee9194f9cbf27412d8c53582b2ca85cde8cbd9eea4d9eefb79affaa7",
+          "source": "xsum",
+          "source_row_id": "38169707",
+          "split": "train",
+          "question_content_sha256": "9248a8f1abb93a79a50b180d730ffb76f2c6022e911c3760fcc53a597b65cd7d"
+        },
+        {
+          "canonical_question_id": "external:00813838bf55afeda6e3dd55c6fc1ac66d1736f19a869e2ec62967c3649b8967",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/354",
+          "split": "train",
+          "question_content_sha256": "b23c0cfa345d97fff08bf5e1a9fb8b041d61ebe7e321098f33fd96117f311e67"
+        },
+        {
+          "canonical_question_id": "external:55ef04668c37e796771db84a47aa34185d0dbfed01bcef3b8c42e6d049876950",
+          "source": "dolly",
+          "source_row_id": "11328",
+          "split": "train",
+          "question_content_sha256": "a2984932ee2077c3b2a39445dcab3b5d33bb580b305e09ca4b95a9cc38e00f0c"
+        },
+        {
+          "canonical_question_id": "external:5c4d6bc3d2881bf7a17d62677d37e7914bdf9240d30a26531d9058554f566af3",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/52",
+          "split": "train",
+          "question_content_sha256": "9fec7f91237840f6608cb6fc1269aee81d1865bf8356850142facabdde49f714"
+        },
+        {
+          "canonical_question_id": "external:e1dc3c09287af369b29741986af3fcab7b39943e5305ef06091e2358b137c761",
+          "source": "xsum",
+          "source_row_id": "22549413",
+          "split": "train",
+          "question_content_sha256": "6a62fa653fe195d34a7ce36751780e10e6fc1982fae1af24e7f0796cea08b84c"
+        },
+        {
+          "canonical_question_id": "external:48e3c0f783169abf40e6bdb63ccf85ad51e4d914d6d035d01f6a505502409d36",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/282",
+          "split": "train",
+          "question_content_sha256": "e74a0a12482f4d352ddc1a27b02c91c917104f70453edc0f3fb2d6156aa95130"
+        },
+        {
+          "canonical_question_id": "external:fe15eaed8576d2711321d5e913f0dc12f949d09f735a3de4f0e42da7e67e72f5",
+          "source": "dolly",
+          "source_row_id": "7906",
+          "split": "test",
+          "question_content_sha256": "61483d0e6a99bf2be1b5c2a7175fb204fa3edcd99703f8f409a7e3eb027c9845"
+        },
+        {
+          "canonical_question_id": "external:a5d9066268186ec4942c3909efe6b4995c46dc8b933a4866cc7ead88ab74e51f",
+          "source": "hendrycks_math",
+          "source_row_id": "counting_and_probability/423",
+          "split": "train",
+          "question_content_sha256": "9efb5c964266d9a140367cd7a84ba2fa6c9c074acd38bcb103bcd15a3683d3e9"
+        },
+        {
+          "canonical_question_id": "external:f0f4470b0956738826630a12767b17e2dd2e264fec10bfa4f22131d619d9b909",
+          "source": "xsum",
+          "source_row_id": "16931503",
+          "split": "train",
+          "question_content_sha256": "3a00aae1d355e5e62c57b4635dd507602d2c58cd29078b87206921ed3385144d"
+        },
+        {
+          "canonical_question_id": "external:c2eb1cba0cd0e04b4b21b2c6c1451fe25b34dc3ec00dbd05e89146705f4867ab",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/315",
+          "split": "train",
+          "question_content_sha256": "aa796bbd87623d29cd9b0be6d82231b98769948a1787c7ecc69edafba43205d7"
+        },
+        {
+          "canonical_question_id": "external:3f46e633447830448d4be3eb304ef66774685987c3098db00d0d72443e3201c7",
+          "source": "dolly",
+          "source_row_id": "2614",
+          "split": "train",
+          "question_content_sha256": "c2cf7238a0edc4365f1f387f68335d9548354b86e36ed9b986f60868d1e60349"
+        },
+        {
+          "canonical_question_id": "external:0552252ee18a1ec7eff7dab42c8e6fb915f1e5a0203f993dd9d9167f7510aa21",
+          "source": "hendrycks_math",
+          "source_row_id": "counting_and_probability/324",
+          "split": "train",
+          "question_content_sha256": "b820dc1dcbf6872391e17a09cf70f29f4c2822ab5f748064c18bf8f85164ccd1"
+        },
+        {
+          "canonical_question_id": "external:3b430ce3d357a22bb60b3ac5a296e25f03f931554958267fbe255ec45be509fe",
+          "source": "xsum",
+          "source_row_id": "37914911",
+          "split": "train",
+          "question_content_sha256": "e03cc7a7268ed12924a3341266e95a9b5b3d71d934906ac5b68857d28d2c513d"
+        },
+        {
+          "canonical_question_id": "external:88d1206554bbb6c8b4c51af9aeaa7fa91455976a92c03480e73c7af9eaf4aeb3",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/516",
+          "split": "validation",
+          "question_content_sha256": "ad0d97882d5ce39be80d73a7db01c0ba0bdc5b33959822ff0524099522fb5377"
+        },
+        {
+          "canonical_question_id": "external:35d0cced3f7978cd74e0443966fe34dec76817926410970745a6b36b3abdfad7",
+          "source": "dolly",
+          "source_row_id": "13225",
+          "split": "train",
+          "question_content_sha256": "f76c2cfcdd233bfbe4065b6d0a8243e5bb2dbb64ac7b884029c6f2dc05400041"
+        },
+        {
+          "canonical_question_id": "external:742394368f87f68c8598a69aafe3f53525c5ffa14716250d46b07b9ee5767b2b",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/752",
+          "split": "train",
+          "question_content_sha256": "b99a8c3ef6fb52353825a8da621872837f3dce4820295d5b276f01bb0d9163e5"
+        },
+        {
+          "canonical_question_id": "external:11ab0b1f93a09c3fdd15661e3e7555aaed4c8ddc5f24e493718b1c560f3837e0",
+          "source": "xsum",
+          "source_row_id": "32823010",
+          "split": "validation",
+          "question_content_sha256": "5899f534d459824dca1f31c4614689541f8114acdd73063470947e8aeb63c743"
+        },
+        {
+          "canonical_question_id": "external:c5a5aeaa48dad640d6d41029cc7fb324d0c0e495ea21e3493309473c8487c495",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/258",
+          "split": "train",
+          "question_content_sha256": "15bec2f6f57fc652f5f9f8139a54eba7757419443358dd26c3b72037a086d43d"
+        },
+        {
+          "canonical_question_id": "external:d91b3afc77909e129d35459e2ae917767d72868988b03268534b45f06bef9342",
+          "source": "dolly",
+          "source_row_id": "7041",
+          "split": "test",
+          "question_content_sha256": "5799aeb95ff765832f972ff4f49785e80203d61bd93b0cd0a1605d2e13e98a31"
+        },
+        {
+          "canonical_question_id": "external:de9606d7db72109e61d5a0ea37a44f74b6a945ee6f7a5e0c62325b484a651b08",
+          "source": "hendrycks_math",
+          "source_row_id": "counting_and_probability/643",
+          "split": "validation",
+          "question_content_sha256": "14efe8bfafcabfe8adcce338a8dc665bd56fdb2440e04b9f94581979a36d8370"
+        },
+        {
+          "canonical_question_id": "external:64db2c396b9dfa2c70388c00c390ce880a176e528e456fbca2e9c575aa94ea15",
+          "source": "xsum",
+          "source_row_id": "27254700",
+          "split": "validation",
+          "question_content_sha256": "d7039426ece50a7878294a5d4070014c132df827049e94826a71723f97466746"
+        },
+        {
+          "canonical_question_id": "external:279f2a37cdbb660459289cbb135136b10f257c54549c44490e23ccadce796c94",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/27",
+          "split": "test",
+          "question_content_sha256": "e8af39a1900f981049237b87fde74eadd9773a89f09a9e7e46dbf6e721252c1e"
+        },
+        {
+          "canonical_question_id": "external:8add810ee900ce8d2b182b7cd8d7a9b015d96640dd429e57a4d6901d75ea455c",
+          "source": "dolly",
+          "source_row_id": "6006",
+          "split": "test",
+          "question_content_sha256": "2288de6c7f587c8eaa84f51a07a25d243be270f166f0f1b6e0eef9bc42bc6cc3"
+        },
+        {
+          "canonical_question_id": "external:f31c3e342bd84c459d146aae8861c5abab538772a61b7c81c7d942c440a5e0f6",
+          "source": "hendrycks_math",
+          "source_row_id": "intermediate_algebra/1067",
+          "split": "test",
+          "question_content_sha256": "b2a2ab0da563c3decac99f33c5e1822231ea7651dcbf942b9617c47098060749"
+        },
+        {
+          "canonical_question_id": "external:0c17303762233287ae34b50b21af2bebbcb4a97333f03af52522800ca671b88f",
+          "source": "xsum",
+          "source_row_id": "37870725",
+          "split": "validation",
+          "question_content_sha256": "e1f3c04a532f54c75fffd51c1843fa4dbcef38e1ce1a0065ea0bcf3411f4d243"
+        },
+        {
+          "canonical_question_id": "external:9687b045c7d71b1374e74b00a590e5398b71f2dbe5892e294c55af58230f46a8",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/885",
+          "split": "test",
+          "question_content_sha256": "1f97fa69156e34546d46ae9959800d94151ecc4a65b120329c34066794094faa"
+        },
+        {
+          "canonical_question_id": "external:424bb605d933a7cdf97a421f901ba252f4e646bb58cd5410e7c91ec167c5ef40",
+          "source": "dolly",
+          "source_row_id": "5657",
+          "split": "test",
+          "question_content_sha256": "876a71da62d32827ff00aaaff1d6aeb12a59c0e5cbb5d34ac20280cfb9e38a08"
+        },
+        {
+          "canonical_question_id": "external:4a7618a3fb3df2719b5cc2063912a5e9c3b1e52ea734164d39de7800dc8ca0d3",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/193",
+          "split": "test",
+          "question_content_sha256": "7beac4ca5a05aed8266caef84a9e43e3ed04e8b2ff0a0ce1d7bdad49ddca28f1"
+        },
+        {
+          "canonical_question_id": "external:0a3511e662fdb181c30592eca909e09fda687c2d3f71faa57507d993edc2c9ad",
+          "source": "xsum",
+          "source_row_id": "34149482",
+          "split": "test",
+          "question_content_sha256": "82fffdcbe517d27aa956023ff818e696028fd446d815089eb4010217cd493f74"
+        },
+        {
+          "canonical_question_id": "external:9448aa9cfd421fabfbbeb31d0e4e214c5a39418f2428cfbff1e47e92eb062685",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/344",
+          "split": "test",
+          "question_content_sha256": "9fd947f8ac7c64be89ac7be0bbe3242ecd4e4882b45da8d79d8ab1900b6b46eb"
+        },
+        {
+          "canonical_question_id": "external:255715539fb9141386fdd1b6a868a2eb04dbd86638f68b4b6aef9788bb4d7344",
+          "source": "dolly",
+          "source_row_id": "3570",
+          "split": "test",
+          "question_content_sha256": "2766e1738bd9fe48be621b99dd532bfd575c6af77b2d324762a45cc11a9faf57"
+        },
+        {
+          "canonical_question_id": "external:95d482bba9ea87aee55ea63f988902715a211df06db8628e8e3c514b38d9305d",
+          "source": "hendrycks_math",
+          "source_row_id": "counting_and_probability/569",
+          "split": "test",
+          "question_content_sha256": "50bf5c7a5ef8e7f803bcf88459305b834b8ede02bd8fd72f89abe4708b86b0b8"
+        },
+        {
+          "canonical_question_id": "external:9493ec42fc3d0c1a0f06f0ea51ce27311cbf55af17e9aad0a1d89bfafedae597",
+          "source": "xsum",
+          "source_row_id": "34904437",
+          "split": "test",
+          "question_content_sha256": "9e5a8e5d385080686181764e981f587c0ec71d4e3881e64188694d600e0c1f3a"
+        },
+        {
+          "canonical_question_id": "external:9451a6c3ab8a8d220b987d045fe9d00e7012997be09c09695c39401b3a5a0e71",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/298",
+          "split": "test",
+          "question_content_sha256": "6cac29f957434eb379707fae5d4be400a82a9e234ec07f15105b67f742c43de3"
+        },
+        {
+          "canonical_question_id": "external:2c9f51b76284842a3b44b125aad02bebfb45ded136f8ebd25ff92b42a338ec38",
+          "source": "dolly",
+          "source_row_id": "323",
+          "split": "test",
+          "question_content_sha256": "ed7fcb5631b8c387233fc33255228ba557ba33c35fccde32240899d2612e9b80"
+        },
+        {
+          "canonical_question_id": "external:5923c3ddc4cbc80f833f30148b99c6f820ec28b98c524ade5e2ff706e7153e93",
+          "source": "hendrycks_math",
+          "source_row_id": "geometry/229",
+          "split": "test",
+          "question_content_sha256": "63a56b180737e5b14f4592af69f1f1bd20108e75342c5464e6a0f26109de383e"
+        },
+        {
+          "canonical_question_id": "external:87756998920aae3a7146b1a7a63b89ff5d2bcb395f463c01eb4185226da9adb0",
+          "source": "xsum",
+          "source_row_id": "25205548",
+          "split": "test",
+          "question_content_sha256": "62ac75009bce87a7ef5f503f93c2f1c9a1f2b21b3ddfae96897789f0f3c3646d"
+        },
+        {
+          "canonical_question_id": "external:576295c494ee682eca10bbfee2da597d935ff2e72de84ae432bb33b89ac98aa1",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/45",
+          "split": "test",
+          "question_content_sha256": "2e8868ce5830972a29947886fe4b3e520cd36d6bdd8b791df316f5fe8dd9562a"
+        },
+        {
+          "canonical_question_id": "external:eaeef4287cba0d7f3ddad55b44ac07757d0444983a68e4729c201647812d1060",
+          "source": "dolly",
+          "source_row_id": "9419",
+          "split": "test",
+          "question_content_sha256": "8e2db1fa8c36caad3186816ddc9a9904807bfa9eb633627c9527d8e326b8cd25"
+        },
+        {
+          "canonical_question_id": "external:8bab1b7f9e79a16cc79375346afc8ab8c66517dc48e3913f15355dffeb0d99e1",
+          "source": "hendrycks_math",
+          "source_row_id": "prealgebra/965",
+          "split": "test",
+          "question_content_sha256": "13cf3e80918358dfa06556a744152587ce7336c5560902d79c16d55d1cca727d"
+        },
+        {
+          "canonical_question_id": "external:4010bddab028a8993c9f62e53fdeb4aedc29ef01ff21c69e8699d87ba5fa2cac",
+          "source": "xsum",
+          "source_row_id": "27744701",
+          "split": "test",
+          "question_content_sha256": "5920775094626bb6f8892379473d0a872c15c918733566f9d3a4b6dd36153304"
+        },
+        {
+          "canonical_question_id": "external:b411baaf33a2b2b9ab2d5e390bb7929ec37ba23732d2b82f3eb808e3bf196f48",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/1112",
+          "split": "test",
+          "question_content_sha256": "5bcb340b2844f3b2c178b1d33fb5b8dbbb7eb3db9019c3754d7f689c167c33d0"
+        },
+        {
+          "canonical_question_id": "external:feabab1074fcea55ba4264531de857c97472f5c3bc4cafc0f087909c08802abb",
+          "source": "dolly",
+          "source_row_id": "3999",
+          "split": "test",
+          "question_content_sha256": "df61e85cb612bf5258a2afd47306119476b6d89cfc93dd80d9cb63731cf5269b"
+        },
+        {
+          "canonical_question_id": "external:81e73618404d905997b0fad63f6af7c72afd5b9c36c0520a93e87b066375549c",
+          "source": "hendrycks_math",
+          "source_row_id": "intermediate_algebra/1039",
+          "split": "test",
+          "question_content_sha256": "6739629c7ae083934c894201e9cab30312c33bc9653ffaecb99fa8c66c73907f"
+        },
+        {
+          "canonical_question_id": "external:dc3781956558dc5c9fff25430cce02f6afff7a6678175aaad3eac24e4df03253",
+          "source": "xsum",
+          "source_row_id": "36834080",
+          "split": "test",
+          "question_content_sha256": "8f4e769dc7717e422906aae84241b5ee712979ba606c52cc1e34dff5c0825c8f"
+        },
+        {
+          "canonical_question_id": "external:2057c63b76508a2a34ca605dc1102af2b92777554c80118659db1124406e2b6e",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/63",
+          "split": "test",
+          "question_content_sha256": "9d435098edfd75acdeb1617b3ff07d8ef270bddb82403f7208bf8530e1cafed6"
+        },
+        {
+          "canonical_question_id": "external:56798bb5e83cec22c77f3313eccb3d0ab6e122065da8ae7b9f10c19497f546a4",
+          "source": "dolly",
+          "source_row_id": "11614",
+          "split": "test",
+          "question_content_sha256": "73ad1c58ade0ff5cd430a6960501610e5aa6d97381aafe098409ace69a1efca0"
+        },
+        {
+          "canonical_question_id": "external:b02d637463587bcd4cc052c85e42466a4fb370cb0de75c72bd91f5e3c00e122a",
+          "source": "hendrycks_math",
+          "source_row_id": "intermediate_algebra/188",
+          "split": "test",
+          "question_content_sha256": "72ecdd6ce1d95564bee7b30d07d0c9ece8568beb48a781125fc138ec9eb7f781"
+        },
+        {
+          "canonical_question_id": "external:2e83b4364c0b88d0717cdf6b558d2af3803bd394e8ed97c9b8b6fc354d31086d",
+          "source": "xsum",
+          "source_row_id": "39792394",
+          "split": "test",
+          "question_content_sha256": "5b976f2a3ad41549a83745c3f111082eab9aac4ce1ba5531c033e00e8890e1d9"
+        },
+        {
+          "canonical_question_id": "external:ab761ac43aa7d50a74386486d85b07ea6bed5f0cd90b294d2244f101120562e0",
+          "source": "bigcodebench",
+          "source_row_id": "BigCodeBench/949",
+          "split": "test",
+          "question_content_sha256": "f5eab71a02e724a6c44eb097b999a86c4739bcf3f3c136adbb48a257814806bd"
+        },
+        {
+          "canonical_question_id": "external:bc1ae9f09bdb2bb069edc2873bc1135be94d6ffcd7475e3fdb57f4d1399a3c1d",
+          "source": "dolly",
+          "source_row_id": "13017",
+          "split": "test",
+          "question_content_sha256": "a930deb48a5b5171bfffd7fb3c0bd3762904af67c2774d42cbcd7c8683a72c40"
+        },
+        {
+          "canonical_question_id": "external:8bf50fc65eee6dcb276a08094fca72fa64715c3935e1bd4e0e8864f9b25b8d39",
+          "source": "hendrycks_math",
+          "source_row_id": "precalculus/179",
+          "split": "test",
+          "question_content_sha256": "c01a6fc144688c92f57932d5eff2eb74be1914b0cc733acd071006659df2c49b"
+        },
+        {
+          "canonical_question_id": "external:b2d73dee300e9b2dfcea58e9485eaefbb073c268736f1ee624602df5a69c1038",
+          "source": "xsum",
+          "source_row_id": "35761135",
+          "split": "test",
+          "question_content_sha256": "98982a622b04a773477ad24348318428e2909c26a83aaae3edbf29a4c6f8a0d5"
+        }
+      ]
+    }
+  }
+}

@@ -2,7 +2,7 @@
 
 ## 现有代码的运行边界
 
-冻结的 Llama-3.1-8B 实验快照使用 4096 维。指定的两个 70B checkpoint 使用 8192 维。`tools/stage_70b.py` 会独立生成 8192 维 TP8 移植，保留跨 rank 归并和严格资产合同。旧采集器仍只支持 eager、TP1 和 4096 维。70B 的逐前缀采集需要独立实现，真实模型的跨 rank 和 Graph 运行仍须在目标机器验收。
+冻结的 Llama-3.1-8B 实验快照使用 4096 维。指定的两个 70B checkpoint 使用 8192 维。`tools/stage_70b.py` 会独立生成 8192 维 TP8 移植，保留跨 rank 归并和严格资产合同。`tools/collect_tp8.py` 启动独立的 eager 采集。真实 70B 的跨 rank 采集和正式 Graph 运行仍须在目标机器验收。 [完整操作步骤](../CALIBRATION_TP8.md)
 
 这里提供两项独立可执行的校准步骤。第一项读取本机模型权重，生成 70B 词表对齐矩阵。第二项需要从独立的 70B TP8 采集得到真实的带标签前缀数据和匹配的合同，离线拟合分类器。权重、拟合出的参数和采集数据均保留在目标机器的本地目录。
 
@@ -20,7 +20,7 @@ python -m calibration.fit_alignment \
 
 ## 用真实 70B TP8 已采集标签拟合分类器
 
-先准备来自同一 checkpoint、对齐矩阵、TP8 并行方式及补词候选策略的采集合同和样本。字段及协议见 [contracts.py](contracts.py) 的 `BOUND_FIELDS` 与 `validate_collection_row`。每行需要完整条件前缀匹配、真实 Target 标签和 Draft 特征证据。采集应覆盖 root、native1、native2、X 分支及保留 B 和保留 X 均有价值的训练样本。将实验评测题与训练题隔离，使用稳定的 canonical question ID。当前仓库没有已验证的 70B TP8 采集器或现成的 70B 拟合参数。
+按 [操作步骤](../CALIBRATION_TP8.md) 用同一 checkpoint、对齐矩阵、TP8 并行方式及补词候选策略收集样本。字段及协议见 [contracts.py](contracts.py) 的 `BOUND_FIELDS` 与 `validate_collection_row`。每行需要完整条件前缀匹配、真实 Target 标签和 Draft 特征证据。采集应覆盖 root、native1、native2、X 分支及保留 B 和保留 X 均有价值的训练样本。将实验评测题与训练题隔离，使用稳定的 canonical question ID。
 
 ```bash
 python -m calibration.prepare_experiment \

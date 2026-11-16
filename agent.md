@@ -10,7 +10,7 @@
 | 运行负载 | Red Hat 的八个子集，每个按原顺序选 80 条，原样重复一次，每方法每轮共 1,280 个请求 |
 | 原生 EAGLE-3 | 可先在目标机做基线预检、短测和三轮正式测速 |
 | OOV 补词 | 已提供单独的 8192 维 TP8 移植，真实 A100 模型和跨卡 Graph 尚待验证 |
-| OOV 校准 | 已提供模型输出头对齐和离线拟合工具。当前缺少为这对 70B 模型在 TP8 下实际采集的校准行和由此拟合的资产。旧 8B、TP1 资产会被拒绝 |
+| OOV 校准 | 已提供单卡对齐、八卡 eager 采集和离线拟合工具。实际 70B TP8 校准行及分类器由目标机产出，首次启动需要完成短测 |
 
 这里固定的是 2 号 A6000 上最后完成的补词版本源码，即保留其余三项、关闭请求槽位只读视图的版本。70B 移植在独立目录中，把读出宽度和对齐矩阵从 4096 扩展到 8192，沿用跨 TP rank 的候选归并。8B 的三项优化依赖 TP1，在 TP8 不启动。OOV 策略仍是从请求内找词表外候选，保留原生第一候选，用匹配的分类器判断是否替换第二候选，再由 Target 验证。
 
@@ -87,7 +87,7 @@ python tools/benchmark.py "${common[@]}" --methods eagle728 \
 
 ## 5. 补词版的资产和验收
 
-先按 [calibration/README.md](calibration/README.md) 在目标机器上生成 8192×8192 的词表对齐矩阵。拟合分类器需要同一组 Target、Draft、TP8 数值路径和候选策略采集的真实 Draft 特征及 Target 标签。此发行包提供拟合和打包流程，TP8 在线采集器仍待实现与验收。评测题保持独立。
+按 [CALIBRATION_TP8.md](CALIBRATION_TP8.md) 在目标机器上生成 8192×8192 的词表对齐矩阵，用 `tools/collect_tp8.py` 收集同一组 Target、Draft、TP8 数值路径和候选策略下的真实 Draft 特征及 Target 标签，再拟合分类器。先在目标机通过采集短测，评测题保持独立。
 
 已有真实 TP8 校准行、合同并完成资产拟合后，`OOV_ASSETS` 指向含有 `alignment.pt`、`runtime_contract.json` 和 `calibration_asset.json` 的 `parameters` 目录。合同中的模型路径应解析到当前本机实际加载的位置。权重文件需要在各自模型目录内。Hugging Face 缓存目录如果通过符号链接指向目录外的 blobs，请使用已物化的 checkpoint 目录。
 
