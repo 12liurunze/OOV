@@ -135,19 +135,29 @@ def gpu_devices(ids):
     return devices
 
 
-def foreign_processes(devices, own_pid=None):
+def gpu_processes(devices):
     uuids = {d["uuid"] for d in devices}
-    foreign = []
-    for row in smi(["--query-compute-apps=gpu_uuid,pid", "--format=csv,noheader,nounits"]):
-        uuid, pid = (field.strip() for field in row.split(",")[:2])
-        if uuid in uuids and not belongs_to(int(pid), own_pid):
-            foreign.append((uuid, int(pid)))
-    return foreign
+    rows = smi(["--query-compute-apps=gpu_uuid,pid", "--format=csv,noheader,nounits"])
+    pairs = (tuple(field.strip() for field in row.split(",")[:2]) for row in rows)
+    return [(uuid, int(pid)) for uuid, pid in pairs if uuid in uuids]
+
+
+def foreign_processes(devices, own_pid=None):
+    return [(uuid, pid) for uuid, pid in gpu_processes(devices) if not belongs_to(pid, own_pid)]
 
 
 def belongs_to(pid, root):
+    """True if pid descends from root or still sits in the session root leads.
+
+    Workers start with start_new_session=True. During engine shutdown a TP rank can outlive its
+    parent and be reparented to init; it keeps the worker's session, which the parent walk misses."""
     if root is None:
         return False
+    try:
+        if os.getsid(pid) == root:
+            return True
+    except OSError:
+        pass
     while pid > 1:
         if pid == root:
             return True
@@ -157,6 +167,15 @@ def belongs_to(pid, root):
         except (OSError, IndexError, ValueError):
             return False
     return False
+
+
+def wait_until_released(devices, root, timeout=120):
+    """Wait until no process of the worker's session holds the selected GPUs."""
+    deadline = time.monotonic() + timeout
+    while own := [(uuid, pid) for uuid, pid in gpu_processes(devices) if belongs_to(pid, root)]:
+        if time.monotonic() > deadline:
+            raise RuntimeError(f"Worker processes still hold the selected GPUs after {timeout} s: {own}")
+        time.sleep(2)
 
 
 def configuration(plan, method):
@@ -377,6 +396,8 @@ def run_arm(plan, plan_path, method, directory):
                 if busy := foreign_processes(plan["devices"], proc.pid):
                     raise RuntimeError(f"Another workload entered the selected devices: {busy}")
                 time.sleep(2)
+            if not proc.returncode:  # TP ranks may still be exiting; they are not a foreign workload
+                wait_until_released(plan["devices"], proc.pid)
             if proc.returncode or foreign_processes(plan["devices"]):
                 raise RuntimeError(f"Arm failed or lost GPU isolation. Inspect {directory / 'run.log'}")
         finally:
