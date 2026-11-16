@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "base": {
+    "url": "https://raw.githubusercontent.com/12liurunze/llama-profile/6d912fcc5ce55f2afcfa387aac504864ee33d0fc/vendor/original_runtime.tar.gz",
+    "sha256": "55d9c884269a1e5fb948931e34eedbc16132a0334d03eb02894dc1e84657eb2d",
+    "bytes": 13150097,
+    "inventory": {
+      "count": 4886,
+      "sha256": "a1a17071328d59f1466464b27ad444a341a1a6dbe3794fea20e5699786ae1311"
+    }
+  },
+  "arms": {
+    "native": {
+      "remove": [],
+      "files": {
+        "sglang/kernels/ops/attention/decode_attention.py": "8dc74a8686ae5c2860182bb257dd797e69a016636b8cec6c79fa1a2878790bbc",
+        "sglang/kernels/ops/kvcache/cache_move.py": "26eb42fd2ae7868635d5d271ec6965aa0a8979a211929d1ab5d0e70672546db5",
+        "sglang/kernels/ops/speculative/topk1.py": "0cba708fa0eb85dc9f5f93f885542105b04089702d22b227ecf0118997d0be78",
+        "sglang/srt/layers/attention/triton_backend.py": "c288547e4fac92f1d6182cce18357b7ba30fd43fb55d2a733b77c3b734498ffc",
+        "sglang/srt/layers/logits_processor.py": "f1f62b8a1bdf2d6c0f810f4e2385868cb1b704b1b9ac96f087264522d5c2e056",
+        "sglang/srt/managers/detokenizer_manager.py": "5b0de5696dec2d4a87c445b7e05a29271cc06da66a4981e33e6d34538b14b5aa",
+        "sglang/srt/managers/io_struct.py": "860bf6d1f7871e050d409bcfb90b0610c6bbd4349d08be5567b63aa15235281b",
+        "sglang/srt/managers/overlap_utils.py": "d5084ea88369eded23bfe1d7af640995df75bdafb231ae9d76152020d484fd1c",
+        "sglang/srt/managers/schedule_batch.py": "d4bfbf43ea3354d3985ce4983eedeb5347c291fe42db83f4a5b1755f2cfc23f6",
+        "sglang/srt/managers/scheduler.py": "80f70047f74532cafccc652ea0706af46617decd480ecf3127dc1f2467f09691",
+        "sglang/srt/managers/scheduler_components/batch_result_processor.py": "8fb83211b0340941d857ed0dfe7bc1e9ec3bde822467cffdc160a028dce4dba2",
+        "sglang/srt/managers/scheduler_components/output_streamer.py": "f7306a8f710f9baff4532bdb1cf00b717de9407d1a5b963251a0202e38fb1180",
+        "sglang/srt/managers/scheduler_components/weight_updater.py": "431582b7f3bc8878180f1980105e9adeb792ad716c5ca155bf836a42a5dfc8b8",
+        "sglang/srt/managers/tokenizer_manager.py": "563bf541bf7c0bc007c274bd23260031d6b8018fed0bc331a2f576de56142acd",
+        "sglang/srt/managers/utils.py": "3b90ce412a1e928cdc5fbdaeb286f9238377842384ab4a212058a40794e80bc1",
+        "sglang/srt/mem_cache/memory_pool.py": "1ec8f013ea6dd718ce7714a9a4ca1aab3efe52112053f792b54c7d282ed87a6b",
+        "sglang/srt/model_executor/forward_batch_info.py": "a19a7432aca0d787950649ca1216cd44551f1e6b35e29c49a4faa6976564cf6c",
+        "sglang/srt/models/llama_eagle3.py": "3982df3f6a610196a312f3aea6ce267786bf13545c6e499e39eaadec4e7814f4",
+        "sglang/srt/speculative/active_linear.py": "ace20c6eee6e2ffbde524606832988456370a31f581c1d76b3e793aee87ab93b",
+        "sglang/srt/speculative/archive_compact.py": "443e86ff438b6adc17a1c0cddc4043f3680c58f312679f201bc62aa432af6aaf",
+        "sglang/srt/speculative/archive_frontier.py": "ef6df6f359b0dc800b123a501f2b87bf2b6274273780e88d8296cdda4ffdca00",
+        "sglang/srt/speculative/bound_frontier.py": "4e8a141e7ab5b69c122fa8419d87144311c16192f936c9763e4dd8f147765c34",
+        "sglang/srt/speculative/bs_counter.py": "baaddbe848889d512c6125fae7d596e1aa73384e35109b05afebf7c7cb0c1bf6",
+        "sglang/srt/speculative/compact_tp_top2.py": "4671b36bcb36838a638ad7956e9b14014925577d3a6ef39d05c29aa4f14bf663",
+        "sglang/srt/speculative/context_repair.py": "fc46e5cfff8c154212f1618c13f9884e71c042168fe112fb7c0f163f44b5b355",
+        "sglang/srt/speculative/context_repair_impl.py": "14fdc90294511306e497a1cf4c5d06e0ecbc016bad4454a806d5372f4cdde1bc",
+        "sglang/srt/speculative/eagle_draft_cuda_graph_runner.py": "4390c025115c11b9eabdd0c961d76b334a1485994e87a5c2c20134ac448f463c",
+        "sglang/srt/speculative/eagle_info.py": "9084832033ad571e0ea4070d8821c620e158366458efb7ea1f32a028cb0a3ca1",
+        "sglang/srt/speculative/eagle_worker_common.py": "2b411fedcc1cdb12145475d3f015d8bd7c0c6eaad378a0bea826c386e8247091",
+        "sglang/srt/speculative/eagle_worker_v2.py": "4df5fdf42de58937cef1bb54486cb9d0093f02652e9a1950958c0c9dd43b4297",
+        "sglang/srt/speculative/kernel_probe.py": "e013297163976f3628582054e312081e6f79896a3728effe3a9e4616526274ed",
+        "sglang/srt/speculative/live_decode_attention.py": "01fcd715bbc1bc5fc23bc690823e1ac9216dbce1e130b1b0f50eeadb3a8860f6",
+        "sglang/srt/speculative/repair_array_ledger.py": "c9c5681ac69608f0aebe5639913520b547d6daff0e861fa558e24ef9a7b42800",
+        "sglang/srt/speculative/repair_calibration/__init__.py": "9cbbfbbb73287b0a792f237e7c10109eaac979ab5dc882d9338c2d1c475ef769",
+        "sglang/srt/speculative/repair_calibration/candidates.py": "a1847e1591f02043e6385b2f99f35a254aba9d40e19534ec4b2bef0a8ed2bb04",
+        "sglang/srt/speculative/repair_calibration/contracts.py": "95e5148869589eaf0351944305fed816fd0617b79499ba8cc8b18105d527d0b6",
+        "sglang/srt/speculative/repair_calibration/experiment.py": "012afec6dba7700ee6db7db1e9234c1a1fd7a60a7ad6caaf916671853313b651",
+        "sglang/srt/speculative/repair_calibration/model.py": "4ad26e3b795fd813dbaba3bce1978257b494d895d4fe773908b503942252497b",
+        "sglang/srt/speculative/repair_io.py": "d3d0a49d303539ff452fdd3c733c95574b16ef76ef4a9cab396cd68fcbe88788",
+        "sglang/srt/speculative/repair_lifecycle.py": "dcfde1bbc8984eade1b373fb26e72bc9deb30cd998f1ee1ee4379431459e72be",
+        "sglang/srt/speculative/repair_model_identity.py": "b0008f1a77916aab05870db4492d5c25fd7747b5761e60f57cc7e738590f00ce",
+        "sglang/srt/speculative/repair_packed_context.py": "945d741fe25ae83b4ad560503029f9593fc360a240776b24c070414415673fa8",
+        "sglang/srt/speculative/repair_packed_context_kernel.py": "ec59cf5b4ce48e55c5912e7a142c2e62eadf2cb5bcf9dc14e781b9fe8a6a700b",
+        "sglang/srt/speculative/repair_packet_inputs.py": "6acf139b8d362b6bae0e486c1c65ac306fbee8114b6e16292b0b4169c8c574d5",
+        "sglang/srt/speculative/repair_proposal_commit.py": "0e9bd81a0780a22ee3525cac78b6d3d77c39f4d80838cc26c1ad84794082ab0a",
+        "sglang/srt/speculative/repair_recent_distinct_pool.py": "b1e8dfd265433f9b3ffaea7b680626f1d31433acdb4b56e8f62e76dfe5c19509",
+        "sglang/srt/speculative/repair_row_readout.py": "a9d53b16e03cb6ab0bc36d6d3d9e43316622fd28b3521be86ae26a84d2f8c166",
+        "sglang/srt/speculative/repair_stop_metadata.py": "d9a315c1319be38b20de81e2127beb7fc7896f73bbcef3999a6122834331364f",
+        "sglang/srt/speculative/row_readout.py": "a9d53b16e03cb6ab0bc36d6d3d9e43316622fd28b3521be86ae26a84d2f8c166",
+        "sglang/srt/speculative/stage_hooks.py": "ab86b5a1ba9ae310351bf929ce699ce193db2d0ca41ea092a1ca9021f9d1602f"
+      },
+      "inventory": {
+        "all": {
+          "count": 4914,
+          "sha256": "167e1ded0eb62ca7d9c04b53a0e0ecc3ed10e69c91cf9a06e6061fea614916a3"
+        },
+        "python": {
+          "count": 3840,
+          "sha256": "f0824cc1334e79a6c8677840a6ab2129bdbe631dd424a7739d431b7396ea6251"
+        }
+      }
+    },
+    "repair": {
+      "remove": [],
+      "files": {
+        "sglang/srt/speculative/context_repair.py": "b7ab1602c241584796b282dcbff9f585d9cae5073a0e3cb9b9abfb79f8eee90f",
+        "sglang/srt/speculative/repair_io.py": "29666503dfbe0812012db1eb788d4f38bd6fc93f3b64b2281c4984eddc0a743c",
+        "sglang/srt/speculative/repair_norm_clone_elision.py": "92af63acbdbdb4e7a63be187c119a20934ec3f06203559826d0acfd6311c5502",
+        "sglang/srt/speculative/repair_parallel_readout.py": "caf4aa863489e1558c439621ebf38ed8c774cfd816a3ef145b78699aee4b2017"
+      },
+      "inventory": {
+        "all": {
+          "count": 4916,
+          "sha256": "cefa620097e5bbac888f51a1b9d8837f5da14d4d4dbe9d9a9de860776b002918"
+        },
+        "python": {
+          "count": 3842,
+          "sha256": "6c3728bf5fd9b6fd1db22a9b8fc7f96f6643e2dcd0a99b687f1875ff2c3bf76e"
+        }
+      }
+    }
+  }
+}

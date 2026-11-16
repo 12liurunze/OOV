@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+generated/
+results/
+data/
+models/
+assets/
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.jsonl
+*.jsonl.gz
+*.npz
+.env
